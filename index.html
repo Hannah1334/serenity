@@ -1,0 +1,594 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#B7CFFF;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #646F8D;}
+
+#line1 {
+position:absolute;
+border-left:1px dashed #FFFFFF;
+height:67%;
+top:17%;
+left:25%;
+}
+
+#box1 {
+position:absolute;
+border:1px dashed #859DCD;
+padding:1%;
+width:18%;
+height:26%;
+top:17%;
+left:29%;
+}
+
+#content1 {
+position:relative;
+background-color:#CBE3F5;
+padding:1%;
+overflow:auto;
+width:98%;
+height:98%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#box2 {
+position:absolute;
+border:1px dashed #FFFFFF;
+padding:1%;
+width:18%;
+height:11%;
+top:50%;
+left:29%;
+}
+
+#pic1 {
+position:absolute;
+background-color:#ADC5F5;
+width:90%;
+height:74%;
+background-image: url('https://i.imgur.com/weNJNSS.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#box3 {
+position:absolute;
+border:1px dashed #FFFFFF;
+padding:1%;
+width:18%;
+height:11%;
+top:68%;
+left:29%;
+}
+
+#pic2 {
+position:absolute;
+background-color:#ADC5F5;
+width:90%;
+height:74%;
+background-image: url('https://i.imgur.com/XZulszY.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#box4 {
+position:absolute;
+border:1px dashed #FFFFFF;
+padding:1%;
+width:7.75%;
+height:29%;
+top:17%;
+left:50.25%;
+}
+
+#pic3 {
+position:absolute;
+background-color:#ADC5F5;
+width:80%;
+height:88%;
+background-image: url('https://i.imgur.com/EZoI9PH.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3:hover {
+background-image: url('https://i.imgur.com/EQbKjeC.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#box5 {
+position:absolute;
+border:1px dashed #FFFFFF;
+padding:1%;
+width:7%;
+height:29%;
+top:17%;
+left:61.25%;
+}
+
+#pic4 {
+position:absolute;
+background-color:#ADC5F5;
+width:78%;
+height:88%;
+background-image: url('https://i.imgur.com/dJuxilu.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4:hover {
+background-image: url('https://i.imgur.com/zKNkHAb.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#box6 {
+position:absolute;
+border:1px dashed #859DCD;
+padding:1%;
+width:18%;
+height:26%;
+top:53%;
+left:50.25%;
+}
+
+#content2 {
+position:absolute;
+background-color:#CBE3F5;
+padding:1%;
+overflow:auto;
+width:88%;
+height:83%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#line2 {
+position:absolute;
+border-left:1px dashed #FFFFFF;
+height:67%;
+top:17%;
+left:74.25%;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:3%;
+height:6%;
+top:19.5%;
+left:22.5%;
+background-image: url('https://i.imgur.com/B1tFWPS.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tbox1 {
+position:absolute;
+width:5%;
+height:10.5%;
+top:19.5%;
+left:22.5%;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:1%;
+height:2%;
+top:40%;
+left:23.5%;
+background-image: url('https://i.imgur.com/KOLf1Fc.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tbox2 {
+position:absolute;
+width:3%;
+height:6.5%;
+top:40%;
+left:23.5%;
+}
+
+#tabbox3 {
+position:absolute;
+padding:1%;
+width:1%;
+height:2%;
+top:57%;
+left:23.5%;
+background-image: url('https://i.imgur.com/ykdsbtW.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tbox3 {
+position:absolute;
+width:3%;
+height:6.5%;
+top:57%;
+left:23.5%;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:1%;
+height:2%;
+top:74.7%;
+left:23.5%;
+background-image: url('https://i.imgur.com/0jj7zPq.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tbox4 {
+position:absolute;
+width:3%;
+height:6.5%;
+top:74.7%;
+left:23.5%;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:1%;
+height:2%;
+top:19.5%;
+left:72.75%;
+background-image: url('https://i.imgur.com/IDiG5Ii.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tbox5 {
+position:absolute;
+width:3%;
+height:6.5%;
+top:19.5%;
+left:72.75%;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:1%;
+height:2%;
+top:37%;
+left:72.75%;
+background-image: url('https://i.imgur.com/a78nOYg.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tbox6 {
+position:absolute;
+width:3%;
+height:6.5%;
+top:37%;
+left:72.75%;
+}
+
+#tabbox7 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:1%;
+height:2%;
+top:55%;
+left:72.75%;
+background-image: url('https://i.imgur.com/LRqkE3D.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#tbox7 {
+position:absolute;
+width:3%;
+height:6.5%;
+top:55%;
+left:72.75%;
+}
+
+#tabbox8 {
+position:absolute;
+background-color:#859DCD;
+padding:1%;
+width:3%;
+height:6%;
+top:71%;
+left:71.75%;
+background-image: url('https://i.imgur.com/rr8WsUs.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tbox8 {
+position:absolute;
+width:5%;
+height:10.5%;
+top:71%;
+left:71.75%;
+}
+
+.tabs{
+display:block;
+width:100%;
+height:100%;
+opacity:0;
+background-color:#859DCD;
+color:#FFFFFF;
+text-align:center;
+font-size:3vh;
+line-height:2.1;
+font-family: 'Abril Fatface', cursive;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16 {
+display: none;
+}
+
+h1 {
+background-color:#646F8D;
+border-left:10px solid #A0ABC9;
+border-right:10px solid #A0ABC9;
+color:#DCE7FF;
+font-family: 'Abril Fatface', cursive;
+font-size:2vh;
+text-align:center;
+letter-spacing:5px;
+}
+
+i {
+color:#999999;
+}
+
+a {
+color:#C9A1AC;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#646F8D;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One|Josefin+Sans" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('content2').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<html>
+
+<div id="line1"></div>
+<div id="tabbox1"></div>
+<div id="tbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">I</span>
+</div>
+<div id="tabbox2"></div>
+<div id="tbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">II</span>
+</div>
+<div id="tabbox3"></div>
+<div id="tbox3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">III</span>
+</div>
+<div id="tabbox4"></div>
+<div id="tbox4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">IV</span>
+</div>
+
+<div id="box1">
+<div id="content1">
+<h1>Basic Information</h1>
+<b>Name:</b> Serenity McKenna<br>
+<b>Age:</b> Early Twenties<br>
+<b>Birthdate:</b> January 5th<br>
+<b>Gender:</b> Cisgender Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
+<b>Height:</b> 5'5"<br>
+<b>Weight:</b> 120 lbs.
+</div>
+</div>
+<div id="box2">
+<div id="pic1"></div>
+</div>
+<div id="box3">
+<div id="pic2"></div>
+</div>
+<div id="box4">
+<div id="pic3"></div>
+</div>
+<div id="box5">
+<div id="pic4"></div>
+</div>
+<div id="box6">
+<div id="content2">
+<h1>Appearance</h1>
+<h1>Personality</h1>
+</div>
+</div>
+
+<div id="line2"></div>
+<div id="tabbox5"></div>
+<div id="tbox5">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">V</span>
+</div>
+<div id="tabbox6"></div>
+<div id="tbox6">
+<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">VI</span>
+</div>
+<div id="tabbox7"></div>
+<div id="tbox7">
+<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14')">VII</span>
+</div>
+<div id="tabbox8"></div>
+<div id="tbox8">
+<span class="tabs" onClick="changeNavigation ('tab15');changeNavigation1 ('tab16')">VIII</span>
+</div>
+
+<div id="tab1">
+<h1>Basic Information</h1>
+<b>Name:</b> Serenity McKenna<br>
+<b>Age:</b> Early Twenties<br>
+<b>Birthdate:</b> January 5th<br>
+<b>Gender:</b> Cisgender Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
+<b>Height:</b> 5'5"<br>
+<b>Weight:</b> 120 lbs.
+</div>
+<div id="tab2">
+<h1>Appearance</h1>
+<h1>Personality</h1>
+</div>
+
+
+<div id="tab3">
+<h1>McKenna Family History</h1>
+</div>
+<div id="tab4">
+<h1>Serenity's Story</h1>
+</div>
+
+
+<div id="tab5">
+<h1>Family Customs</h1>
+</div>
+<div id="tab6">
+<h1>Family Culture</h1>
+</div>
+
+
+<div id="tab7">
+<h1>Basic Inventory</h1>
+</div>
+<div id="tab8">
+<h1>Medium</h1>
+</div>
+
+
+<div id="tab9">
+<h1>Mana Manipulation</h1>
+<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+</div>
+<div id="tab10">
+<h1>Universal Spells</h1>
+<b>Mana Weave</b><br>
+"To weave ones mana is the very essence of being a mage; almost every spell that you will learn from this tome, as well as spells you develop of your own volition will incorporate this technique in some way, shape, or form. Weaving mana is an extremely simple task to those who are born with an active mana pool; simply focus on a singular part of the body--typically the hands--and envision a manifestation of your inner energies bubbling to it's surface. 
+<br>
+There are numerous books in the Grand Archives that take this process into more depth, and this overview is meant to act as a reference rather than a teacher, so if this is your first time attempting the magical arts, the best course of action for you would be to consult another mage for help, or at the very least another book for beginners within the library. ​This is a general spell, and has no single specific teacher." 
+<br><br>
+<b>Mana Spark</b><br>
+"The next practical step for a mage who has learned to weave their mana is to learn to produce a mana spark. A mana spark is a relatively harmless projection of a mage's energies, creating a physical form and direction to one's mana without actually imbuing heavily violent intent upon it. It is the easiest way to learn the basics of creating projectiles via one's magic, and the physical techniques hind the theory are often reproduced to create a range of different attacks. 
+<br>
+To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best. This is a general spell, and has no single specific teacher."
+</div>
+
+
+<div id="tab11">
+<h1>Faith (Paige)</h1>
+<i>"Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile, and no faith spell can ever cause harm to another being (unless faith magic specifically harms them)."</i>
+</div>
+<div id="tab12">
+<h1>Paige Spells</h1>
+</div>
+
+
+<div id="tab13">
+<h1>???</h1>
+</div>
+<div id="tab14">
+<h1>???</h1>
+</div>
+
+
+<div id="tab15">
+<h1>???</h1>
+</div>
+<div id="tab16">
+<h1>???</h1>
+</div>
+
+<embed style="height: 0%; width: 0%;"src="Serenity.mp3" autostart="true" loop="true">
+
+</html>
