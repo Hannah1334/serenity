@@ -5,7 +5,7 @@ body{
 background-image: url('') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
-background-size:contain;
+background-size:100% 100%;
 background-color:#B7CFFF;
 }
 
@@ -13,375 +13,735 @@ background-color:#B7CFFF;
 ::-webkit-scrollbar-track {background: none;}
 ::-webkit-scrollbar-thumb {background: #646F8D;}
 
-#line1 {
+#pic1 {
 position:absolute;
-border-left:1px dashed #FFFFFF;
-height:67%;
-top:17%;
-left:25%;
+width:25%;
+height:100%;
+top:0%;
+left:0%;
+background-image: url('https://i.imgur.com/1lY0r1N.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#B7CFFF;
 }
 
-#box1 {
+#burder1 {
 position:absolute;
-border:1px dashed #859DCD;
+background-color:#859DCD;
+width:2%;
+height:100%;
+top:0%;
+left:23%;
+}
+
+#basicstitle {
+position:absolute;
+background-color:#646F8D;
 padding:1%;
-width:18%;
-height:26%;
-top:17%;
-left:29%;
+width:15%;
+height:0.1%;
+top:70%;
+left:3%;
+font-family: 'Abril Fatface', cursive;
+text-align:center;
+font-size:2vh;
+letter-spacing:3px;
+color:#DCE7FF;
+line-height:0;
 }
 
-#content1 {
-position:relative;
+#basics {
+position:absolute;
 background-color:#CBE3F5;
 padding:1%;
-overflow:auto;
-width:98%;
-height:98%;
+width:15%;
+height:15%;
+top:75%;
+left:3%;
 color:#000000;
 font-size:1.5vh;
 font-family: 'Josefin Sans', sans-serif;
 }
 
-#box2 {
+#subjectname {
+background-color:#ADC5F5;
 position:absolute;
-border:1px dashed #FFFFFF;
-padding:1%;
-width:18%;
-height:11%;
-top:50%;
-left:29%;
+width:23%;
+height:11.5%;
+top:12%;
+text-align:center;
+line-height:1.8;
+left:4%;
 }
 
-#pic1 {
+#name {
+position:absolute;
+width:23%;
+height:11.5%;
+top:12%;
+left:26%;
+text-align:center;
+line-height:1.8;
+}
+
+#subjectage {
 position:absolute;
 background-color:#ADC5F5;
-width:90%;
-height:74%;
-background-image: url('https://i.imgur.com/weNJNSS.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
+width:23%;
+height:11.5%;
+top:28%;
+text-align:center;
+line-height:1.8;
+left:4%;
 }
 
-#box3 {
+#age {
 position:absolute;
-border:1px dashed #FFFFFF;
-padding:1%;
-width:18%;
-height:11%;
-top:68%;
-left:29%;
+width:23%;
+height:11.5%;
+top:28%;
+text-align:center;
+line-height:1.8;
+left:26%;
+}
+
+#subjectdate {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:44%;
+text-align:center;
+line-height:1.8;
+left:4%;
+}
+
+#date {
+position:absolute;
+width:23%;
+height:11.5%;
+top:44%;
+text-align:center;
+line-height:1.8;
+left:26%;
+}
+
+#subjectgender {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:61%;
+text-align:center;
+line-height:1.8;
+left:4%;
+}
+
+#gender {
+position:absolute;
+width:23%;
+height:11.5%;
+top:61%;
+text-align:center;
+line-height:1.8;
+left:26%;
+}
+
+#subjectsexuality {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:77.2%;
+text-align:center;
+line-height:1.8;
+left:4%;
+}
+
+#sexuality {
+position:absolute;
+width:23%;
+height:11.5%;
+top:77.2%;
+text-align:center;
+line-height:1.8;
+left:26%;
+}
+
+#subjectspecies {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:12%;
+left:50%;
+text-align:center;
+line-height:1.6;
+}
+
+#species {
+position:absolute;
+width:22%;
+height:11.5%;
+top:12%;
+left:73%;
+text-align:center;
+line-height:1.8;
+}
+
+#subjectrace {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:28%;
+left:50%;
+text-align:center;
+line-height:1.6;
+}
+
+#race {
+position:absolute;
+width:22%;
+height:11.5%;
+top:28%;
+left:73%;
+text-align:center;
+line-height:1.8;
+}
+
+#subjectoccupation {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:44%;
+left:50%;
+text-align:center;
+line-height:1.6;
+}
+
+#occupation {
+position:absolute;
+width:22%;
+height:11.5%;
+top:44%;
+left:73%;
+text-align:center;
+line-height:1.8;
+}
+
+#subjectheight {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:61%;
+left:50%;
+text-align:center;
+line-height:1.6;
+}
+
+#height {
+position:absolute;
+width:22%;
+height:11.5%;
+top:61%;
+left:73%;
+text-align:center;
+line-height:1.8;
+}
+
+#subjectweight {
+position:absolute;
+background-color:#ADC5F5;
+width:23%;
+height:11.5%;
+top:77.2%;
+left:50%;
+text-align:center;
+line-height:1.6;
+}
+
+#weight {
+position:absolute;
+width:22%;
+height:11.5%;
+top:77.2%;
+left:73%;
+text-align:center;
+line-height:1.8;
 }
 
 #pic2 {
 position:absolute;
-background-color:#ADC5F5;
-width:90%;
-height:74%;
-background-image: url('https://i.imgur.com/XZulszY.png') !important; 
+width:25%;
+height:100%;
+top:0%;
+left:75%;
+background-image: url('https://i.imgur.com/q6xBkQI.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
+background-color:#B7CFFF;
 }
 
-#box4 {
+#burder2 {
 position:absolute;
-border:1px dashed #FFFFFF;
+background-color:#859DCD;
+width:2%;
+height:100%;
+top:0%;
+left:75%;
+}
+
+#detailstitle {
+position:absolute;
+background-color:#646F8D;
 padding:1%;
-width:7.75%;
-height:29%;
-top:17%;
-left:50.25%;
+width:15%;
+height:0.1%;
+top:70%;
+left:80%;
+font-family: 'Abril Fatface', cursive;
+text-align:center;
+font-size:2vh;
+letter-spacing:3px;
+color:#DCE7FF;
+line-height:0;
 }
 
-#pic3 {
-position:absolute;
-background-color:#ADC5F5;
-width:80%;
-height:88%;
-background-image: url('https://i.imgur.com/EZoI9PH.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#pic3:hover {
-background-image: url('https://i.imgur.com/EQbKjeC.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#box5 {
-position:absolute;
-border:1px dashed #FFFFFF;
-padding:1%;
-width:7%;
-height:29%;
-top:17%;
-left:61.25%;
-}
-
-#pic4 {
-position:absolute;
-background-color:#ADC5F5;
-width:78%;
-height:88%;
-background-image: url('https://i.imgur.com/dJuxilu.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#pic4:hover {
-background-image: url('https://i.imgur.com/zKNkHAb.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#box6 {
-position:absolute;
-border:1px dashed #859DCD;
-padding:1%;
-width:18%;
-height:26%;
-top:53%;
-left:50.25%;
-}
-
-#content2 {
+#details {
 position:absolute;
 background-color:#CBE3F5;
-padding:1%;
 overflow:auto;
-width:88%;
-height:83%;
+padding:1%;
+width:15%;
+height:15%;
+top:75%;
+left:80%;
 color:#000000;
 font-size:1.5vh;
 font-family: 'Josefin Sans', sans-serif;
 }
 
+#content {
+position:absolute;
+width:50%;
+height:100%;
+top:0%;
+left:25%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+text-align:justify;
+}
+
+#box1 {
+position:absolute;
+overflow:auto;
+padding:1%;
+width:30%;
+height:40%;
+top:3%;
+left:3%;
+background-color:#ADC5F5;
+}
+
+#box2 {
+position:absolute;
+overflow:auto;
+padding:1%;
+width:30%;
+height:40%;
+top:3%;
+left:65%;
+background-color:#ADC5F5;
+}
+
+#box3 {
+position:absolute;
+overflow:auto;
+padding:1%;
+width:30%;
+height:40%;
+top:55%;
+left:3%;
+background-color:#ADC5F5;
+}
+
+#box4 {
+position:absolute;
+overflow:auto;
+padding:1%;
+width:30%;
+height:40%;
+top:55%;
+left:65%;
+background-color:#ADC5F5;
+}
+
+#line1 {
+position:absolute;
+border-bottom:2px dashed #859DCD;
+width:32%;
+top:50%;
+left:3%;
+}
+
 #line2 {
 position:absolute;
-border-left:1px dashed #FFFFFF;
-height:67%;
-top:17%;
-left:74.25%;
+border-bottom:2px dashed #859DCD;
+width:32%;
+top:50%;
+left:65%;
+}
+
+#image1 {
+position:absolute;
+width:28%;
+height:40%;
+top:30%;
+left:36%;
+}
+
+#circle1 {
+position:absolute;
+border-radius:100%;
+width:15%;
+height:15%;
+top:8%;
+left:42.5%;
+}
+
+#circle2 {
+position:absolute;
+border-radius:100%;
+width:15%;
+height:15%;
+top:76%;
+left:42.5%;
 }
 
 #tabbox1 {
 position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:3%;
-height:6%;
-top:19.5%;
-left:22.5%;
-background-image: url('https://i.imgur.com/B1tFWPS.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:100% 100%;
-}
-
-#tbox1 {
-position:absolute;
-width:5%;
-height:10.5%;
-top:19.5%;
-left:22.5%;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:20%;
+left:23.25%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox2 {
 position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:1%;
-height:2%;
+background-color:#ADC5F5;
+border-radius:100%;
+width:1.5%;
+height:3%;
 top:40%;
-left:23.5%;
-background-image: url('https://i.imgur.com/KOLf1Fc.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-
-#tbox2 {
-position:absolute;
-width:3%;
-height:6.5%;
-top:40%;
-left:23.5%;
+left:23.25%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox3 {
 position:absolute;
-padding:1%;
-width:1%;
-height:2%;
-top:57%;
-left:23.5%;
-background-image: url('https://i.imgur.com/ykdsbtW.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-
-#tbox3 {
-position:absolute;
-width:3%;
-height:6.5%;
-top:57%;
-left:23.5%;
+background-color:#C1D9FF;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:60%;
+left:23.25%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox4 {
 position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:1%;
-height:2%;
-top:74.7%;
-left:23.5%;
-background-image: url('https://i.imgur.com/0jj7zPq.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
+background-color:#D5EDFF;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:80%;
+left:23.25%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#tbox4 {
-position:absolute;
-width:3%;
-height:6.5%;
-top:74.7%;
-left:23.5%;
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover {
+background-color:#646F8D;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#tabbox5 {
+#friend1 {
 position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:1%;
-height:2%;
-top:19.5%;
-left:72.75%;
-background-image: url('https://i.imgur.com/IDiG5Ii.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-
-#tbox5 {
-position:absolute;
-width:3%;
-height:6.5%;
-top:19.5%;
-left:72.75%;
-}
-
-#tabbox6 {
-position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:1%;
-height:2%;
-top:37%;
-left:72.75%;
-background-image: url('https://i.imgur.com/a78nOYg.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-
-#tbox6 {
-position:absolute;
-width:3%;
-height:6.5%;
-top:37%;
-left:72.75%;
-}
-
-#tabbox7 {
-position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:1%;
-height:2%;
-top:55%;
-left:72.75%;
-background-image: url('https://i.imgur.com/LRqkE3D.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-}
-
-#tbox7 {
-position:absolute;
-width:3%;
-height:6.5%;
-top:55%;
-left:72.75%;
-}
-
-#tabbox8 {
-position:absolute;
-background-color:#859DCD;
-padding:1%;
-width:3%;
-height:6%;
-top:71%;
-left:71.75%;
-background-image: url('https://i.imgur.com/rr8WsUs.png') !important; 
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:20%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
 
-#tbox8 {
+#friend2 {
 position:absolute;
-width:5%;
-height:10.5%;
-top:71%;
-left:71.75%;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:30%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#friend3 {
+position:absolute;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:40%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#friend4 {
+position:absolute;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:50%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#friend5 {
+position:absolute;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:60%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#friend6 {
+position:absolute;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:70%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#friend7 {
+position:absolute;
+background-color:#99B1E1;
+border-radius:100%;
+width:1.5%;
+height:3%;
+top:80%;
+left:75.25%;
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#familypic {
+position:absolute;
+width:28%;
+height:50%;
+top:25%;
+left:36%;
+}
+
+#familybasics {
+position:absolute;
+background-color:#CBE3F5;
+padding:1%;
+width:26%;
+height:20%;
+top:25%;
+left:67%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#familyinfo {
+position:absolute;
+overflow:auto;
+padding:1%;
+background-color:#ADC5F5;
+width:26%;
+height:23%;
+top:50%;
+left:67%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#familytab1 {
+position:absolute;
+background-color:#ADC5F5;
+width:28%;
+height:10%;
+top:25%;
+left:5%;
+}
+
+#ftabbox1 {
+position:absolute;
+width:28%;
+height:10%;
+top:25%;
+left:5%;
+}
+
+#familytab2 {
+position:absolute;
+background-color:#ADC5F5;
+width:28%;
+height:10%;
+top:38%;
+left:5%;
+}
+
+#ftabbox2 {
+position:absolute;
+width:28%;
+height:10%;
+top:38%;
+left:5%;
+}
+
+#familytab3 {
+position:absolute;
+background-color:#ADC5F5;
+width:28%;
+height:10%;
+top:51.5%;
+left:5%;
+}
+
+#ftabbox3 {
+position:absolute;
+width:28%;
+height:10%;
+top:51.5%;
+left:5%;
+}
+
+#familytab4 {
+position:absolute;
+background-color:#ADC5F5;
+width:28%;
+height:10%;
+top:65%;
+left:5%;
+}
+
+#ftabbox4 {
+position:absolute;
+width:28%;
+height:10%;
+top:65%;
+left:5%;
+}
+
+#fpic {
+position:absolute;
+background-color:#B7CFFF;
+height:75%;
+width:25%;
+left:5%;
+top:12%;
+}
+
+#fline1 {
+position:absolute;
+border-left:2px solid #859DCD;
+height:75%;
+left:33%;
+top:12%;
+}
+
+#fline2 {
+position:absolute;
+border-bottom:1.5px solid #859DCD;
+width:62%;
+left:33%;
+top:50%;
+}
+
+#fname {
+position:absolute;
+background-color:#B7CFFF;
+width:57%;
+height:27%;
+top:12%;
+left:38%;
+text-align:center;
+line-height:1.9;
+}
+
+#ftitle {
+position:absolute;
+background-color:#B7CFFF;
+width:57%;
+height:26%;
+top:61%;
+left:38%;
+text-align:center;
+line-height:1.9;
 }
 
 .tabs{
 display:block;
 width:100%;
 height:100%;
-opacity:0;
-background-color:#859DCD;
-color:#FFFFFF;
-text-align:center;
-font-size:3vh;
-line-height:2.1;
-font-family: 'Abril Fatface', cursive;
+border-radius:100%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
 .tabs:hover {
-opacity:1;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -403,7 +763,7 @@ letter-spacing:5px;
 }
 
 i {
-color:#999999;
+color:#666666;
 }
 
 a {
@@ -429,129 +789,179 @@ font-family: 'Fjalla One', sans-serif;
 
 <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important;}</style>
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One|Josefin+Sans" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content1').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('content2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('familypic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('familybasics').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('familyinfo').innerHTML=document.getElementById(id).innerHTML}</script>
 
 <html>
 
-<div id="line1"></div>
-<div id="tabbox1"></div>
-<div id="tbox1">
-<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">I</span>
+<div id="pic1"></div>
+<div id="burder1"></div>
+<div id="basicstitle">
+Basic Information
 </div>
-<div id="tabbox2"></div>
-<div id="tbox2">
-<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">II</span>
+<div id="basics">
+<div id="subjectname">
+<b>Name:</b>
 </div>
-<div id="tabbox3"></div>
-<div id="tbox3">
-<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">III</span>
+<div id="name">
+Serenity
 </div>
-<div id="tabbox4"></div>
-<div id="tbox4">
-<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">IV</span>
+<div id="subjectage">
+<b>Age:</b>
+</div>
+<div id="age">
+Early 20's
+</div>
+<div id="subjectdate">
+<b>D.O.B.:</b>
+</div>
+<div id="date">
+Jan. 5th
+</div>
+<div id="subjectgender">
+<b>Gender:</b>
+</div>
+<div id="gender">
+Female
+</div>
+<div id="subjectsexuality">
+<b>Sexuality:</b>
+</div>
+<div id="sexuality">
+Demi
+</div>
+<div id="subjectspecies">
+<b>Species:</b>
+</div>
+<div id="species">
+Human
+</div>
+<div id="subjectrace">
+<b>Race:</b>
+</div>
+<div id="race">
+Irish
+</div>
+<div id="subjectoccupation">
+<b>Job:</b>
+</div>
+<div id="occupation">
+<a target="_blank" title="Ulreich University" href="http://ulreich.weebly.com">Student</a>
+</div>
+<div id="subjectheight">
+<b>Height:</b>
+</div>
+<div id="height">
+5'6"
+</div>
+<div id="subjectweight">
+<b>Weight:</b>
+</div>
+<div id="weight">
+120 lbs.
+</div>
 </div>
 
+<div id="content">
 <div id="box1">
-<div id="content1">
-<h1>Basic Information</h1>
-<b>Name:</b> Serenity McKenna<br>
-<b>Age:</b> Early Twenties<br>
-<b>Birthdate:</b> January 5th<br>
-<b>Gender:</b> Cisgender Female<br>
-<b>Sexuality:</b> Demisexual<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Irish<br>
-<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
-<b>Height:</b> 5'5"<br>
-<b>Weight:</b> 120 lbs.
+<h1>Family History</h1>
 </div>
-</div>
+<div id="line1"></div>
 <div id="box2">
-<div id="pic1"></div>
+<h1>Family Customs</h1>
 </div>
+<div id="line2"></div>
 <div id="box3">
-<div id="pic2"></div>
+<h1>Serenity's Story</h1>
 </div>
 <div id="box4">
-<div id="pic3"></div>
+<h1>McKenna Culture</h1>
 </div>
-<div id="box5">
-<div id="pic4"></div>
+<div id="circle1">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/57HAcUR.png"/>
 </div>
-<div id="box6">
-<div id="content2">
-<h1>Appearance</h1>
-<h1>Personality</h1>
+<div id="image1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RRtJit2.png"/>
+</div>
+<div id="circle2">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/9RiaJnp.png"/>
 </div>
 </div>
 
-<div id="line2"></div>
-<div id="tabbox5"></div>
-<div id="tbox5">
-<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">V</span>
+<div id="pic2"></div>
+<div id="burder2"></div>
+<div id="detailstitle">
+Detailed Information
 </div>
-<div id="tabbox6"></div>
-<div id="tbox6">
-<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">VI</span>
+<div id="details">
+<b>Appearance</b><br>
+<br><br>
+<b>Personality</b><br>
 </div>
-<div id="tabbox7"></div>
-<div id="tbox7">
-<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14')">VII</span>
+
+<div id="friend1"></div>
+<div id="friend2"></div>
+<div id="friend3"></div>
+<div id="friend4"></div>
+<div id="friend5"></div>
+<div id="friend6"></div>
+<div id="friend7"></div>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1')"></span>
 </div>
-<div id="tabbox8"></div>
-<div id="tbox8">
-<span class="tabs" onClick="changeNavigation ('tab15');changeNavigation1 ('tab16')">VIII</span>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab4')"></span>
 </div>
 
 <div id="tab1">
-<h1>Basic Information</h1>
-<b>Name:</b> Serenity McKenna<br>
-<b>Age:</b> Early Twenties<br>
-<b>Birthdate:</b> January 5th<br>
-<b>Gender:</b> Cisgender Female<br>
-<b>Sexuality:</b> Demisexual<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Irish<br>
-<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
-<b>Height:</b> 5'5"<br>
-<b>Weight:</b> 120 lbs.
+<div id="box1">
+<h1>Family History</h1>
 </div>
-<div id="tab2">
-<h1>Appearance</h1>
-<h1>Personality</h1>
-</div>
-
-
-<div id="tab3">
-<h1>McKenna Family History</h1>
-</div>
-<div id="tab4">
-<h1>Serenity's Story</h1>
-</div>
-
-
-<div id="tab5">
+<div id="line1"></div>
+<div id="box2">
 <h1>Family Customs</h1>
 </div>
-<div id="tab6">
-<h1>Family Culture</h1>
+<div id="line2"></div>
+<div id="box3">
+<h1>Serenity's Story</h1>
+</div>
+<div id="box4">
+<h1>McKenna Culture</h1>
+</div>
+<div id="circle1">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/57HAcUR.png"/>
+</div>
+<div id="image1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RRtJit2.png"/>
+</div>
+<div id="circle2">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/9RiaJnp.png"/>
+</div>
 </div>
 
-
-<div id="tab7">
-<h1>Basic Inventory</h1>
+<div id="tab2">
+<div id="box1">
+<h1>Inventory</h1>
 </div>
-<div id="tab8">
-<h1>Medium</h1>
-</div>
-
-
-<div id="tab9">
+<div id="line1"></div>
+<div id="box2">
 <h1>Mana Manipulation</h1>
 <i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
 </div>
-<div id="tab10">
+<div id="line2"></div>
+<div id="box3">
+<h1>Medium</h1>
+</div>
+<div id="box4">
 <h1>Universal Spells</h1>
 <b>Mana Weave</b><br>
 "To weave ones mana is the very essence of being a mage; almost every spell that you will learn from this tome, as well as spells you develop of your own volition will incorporate this technique in some way, shape, or form. Weaving mana is an extremely simple task to those who are born with an active mana pool; simply focus on a singular part of the body--typically the hands--and envision a manifestation of your inner energies bubbling to it's surface. 
@@ -561,32 +971,455 @@ There are numerous books in the Grand Archives that take this process into more 
 <b>Mana Spark</b><br>
 "The next practical step for a mage who has learned to weave their mana is to learn to produce a mana spark. A mana spark is a relatively harmless projection of a mage's energies, creating a physical form and direction to one's mana without actually imbuing heavily violent intent upon it. It is the easiest way to learn the basics of creating projectiles via one's magic, and the physical techniques hind the theory are often reproduced to create a range of different attacks. 
 <br>
-To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best. This is a general spell, and has no single specific teacher."
+To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best. This is a general spell, and has no single specific teacher.
+</div>
+<div id="circle1">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/3xLecKX.png"/>
+</div>
+<div id="image1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/aG5MIKS.png"/>
+</div>
+<div id="circle2">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/A8YrtZm.png"/>
+</div>
 </div>
 
-
-<div id="tab11">
+<div id="tab3">
+<div id="box1">
 <h1>Faith (Paige)</h1>
 <i>"Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile, and no faith spell can ever cause harm to another being (unless faith magic specifically harms them)."</i>
 </div>
-<div id="tab12">
+<div id="line1"></div>
+<div id="box2">
+<h1>???</h1>
+</div>
+<div id="line2"></div>
+<div id="box3">
 <h1>Paige Spells</h1>
 </div>
+<div id="box4">
+<h1>???</h1>
+</div>
+<div id="circle1">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/0SaQjSo.png"/>
+</div>
+<div id="image1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/8HaRe93.png"/>
+</div>
+<div id="circle2">
+<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/HtvBw7X.png"/>
+</div>
+</div>
 
+<div id="tab4">
+<div id="familytab1">
+<div id="fpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/UAENg9W.png"/>
+</div>
+<div id="fline1"></div>
+<div id="fline2"></div>
+<div id="fname">
+<b>???</b>
+</div>
+<div id="ftitle">
+<i>Grandfather</i>
+</div>
+</div>
+<div id="ftabbox1">
+<span class="tabs" onClick="changeNavigation1 ('tab5');changeNavigation2 ('tab6');changeNavigation3 ('tab7')"></span>
+</div>
+<div id="familytab2">
+<div id="fpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/o030oo2.png"/>
+</div>
+<div id="fline1"></div>
+<div id="fline2"></div>
+<div id="fname">
+<b>???</b>
+</div>
+<div id="ftitle">
+<i>Brother</i>
+</div>
+</div>
+<div id="ftabbox2">
+<span class="tabs" onClick="changeNavigation1 ('tab8');changeNavigation2 ('tab9');changeNavigation3 ('tab10')"></span>
+</div>
+<div id="familytab3">
+<div id="fpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/CK51ksd.png"/>
+</div>
+<div id="fline1"></div>
+<div id="fline2"></div>
+<div id="fname">
+<b>???</b>
+</div>
+<div id="ftitle">
+<i>Cousin</i>
+</div>
+</div>
+<div id="ftabbox3">
+<span class="tabs" onClick="changeNavigation1 ('tab11');changeNavigation2 ('tab12');changeNavigation3 ('tab13')"></span>
+</div>
+<div id="familytab4">
+<div id="fpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/olEOKHW.png"/>
+</div>
+<div id="fline1"></div>
+<div id="fline2"></div>
+<div id="fname">
+<b>Griffin</b>
+</div>
+<div id="ftitle">
+<i>Sire</i>
+</div>
+</div>
+<div id="ftabbox4">
+<span class="tabs" onClick="changeNavigation1 ('tab14');changeNavigation2 ('tab15');changeNavigation3 ('tab16')"></span>
+</div>
+<div id="familypic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/HXaW5xv.png"/>
+</div>
+<div id="familybasics">
+<div id="subjectname">
+<b>Name:</b>
+</div>
+<div id="name">
+???
+</div>
+<div id="subjectage">
+<b>Age:</b>
+</div>
+<div id="age">
+Mid 60's
+</div>
+<div id="subjectdate">
+<b>D.O.B.:</b>
+</div>
+<div id="date">
+May 13th
+</div>
+<div id="subjectgender">
+<b>Gender:</b>
+</div>
+<div id="gender">
+Male
+</div>
+<div id="subjectsexuality">
+<b>Sexuality:</b>
+</div>
+<div id="sexuality">
+Hetero
+</div>
+<div id="subjectspecies">
+<b>Species:</b>
+</div>
+<div id="species">
+Human
+</div>
+<div id="subjectrace">
+<b>Race:</b>
+</div>
+<div id="race">
+Irish
+</div>
+<div id="subjectoccupation">
+<b>Job:</b>
+</div>
+<div id="occupation">
+Patriarch
+</div>
+<div id="subjectheight">
+<b>Height:</b>
+</div>
+<div id="height">
+6'6"
+</div>
+<div id="subjectweight">
+<b>Weight:</b>
+</div>
+<div id="weight">
+230 lbs.
+</div>
+</div>
+<div id="familyinfo">
+text
+</div>
 
+<div id="tab5">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/HXaW5xv.png"/>
+</div>
+<div id="tab6">
+<div id="subjectname">
+<b>Name:</b>
+</div>
+<div id="name">
+???
+</div>
+<div id="subjectage">
+<b>Age:</b>
+</div>
+<div id="age">
+Mid 60's
+</div>
+<div id="subjectdate">
+<b>D.O.B.:</b>
+</div>
+<div id="date">
+May 13th
+</div>
+<div id="subjectgender">
+<b>Gender:</b>
+</div>
+<div id="gender">
+Male
+</div>
+<div id="subjectsexuality">
+<b>Sexuality:</b>
+</div>
+<div id="sexuality">
+Hetero
+</div>
+<div id="subjectspecies">
+<b>Species:</b>
+</div>
+<div id="species">
+Human
+</div>
+<div id="subjectrace">
+<b>Race:</b>
+</div>
+<div id="race">
+Irish
+</div>
+<div id="subjectoccupation">
+<b>Job:</b>
+</div>
+<div id="occupation">
+Patriarch
+</div>
+<div id="subjectheight">
+<b>Height:</b>
+</div>
+<div id="height">
+6'6"
+</div>
+<div id="subjectweight">
+<b>Weight:</b>
+</div>
+<div id="weight">
+260 lbs.
+</div>
+</div>
+<div id="tab7">
+text
+</div>
+
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/K2N8IS6.png"/>
+</div>
+<div id="tab9">
+<div id="subjectname">
+<b>Name:</b>
+</div>
+<div id="name">
+???
+</div>
+<div id="subjectage">
+<b>Age:</b>
+</div>
+<div id="age">
+25
+</div>
+<div id="subjectdate">
+<b>D.O.B.:</b>
+</div>
+<div id="date">
+Mar 20th
+</div>
+<div id="subjectgender">
+<b>Gender:</b>
+</div>
+<div id="gender">
+Male
+</div>
+<div id="subjectsexuality">
+<b>Sexuality:</b>
+</div>
+<div id="sexuality">
+Hetero
+</div>
+<div id="subjectspecies">
+<b>Species:</b>
+</div>
+<div id="species">
+Human
+</div>
+<div id="subjectrace">
+<b>Race:</b>
+</div>
+<div id="race">
+Irish
+</div>
+<div id="subjectoccupation">
+<b>Job:</b>
+</div>
+<div id="occupation">
+Warrior
+</div>
+<div id="subjectheight">
+<b>Height:</b>
+</div>
+<div id="height">
+6'3"
+</div>
+<div id="subjectweight">
+<b>Weight:</b>
+</div>
+<div id="weight">
+230 lbs.
+</div>
+</div>
+<div id="tab10">
+text
+</div>
+
+<div id="tab11">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/8wvXHh3.png"/>
+</div>
+<div id="tab12">
+<div id="subjectname">
+<b>Name:</b>
+</div>
+<div id="name">
+???
+</div>
+<div id="subjectage">
+<b>Age:</b>
+</div>
+<div id="age">
+???
+</div>
+<div id="subjectdate">
+<b>D.O.B.:</b>
+</div>
+<div id="date">
+???
+</div>
+<div id="subjectgender">
+<b>Gender:</b>
+</div>
+<div id="gender">
+Male
+</div>
+<div id="subjectsexuality">
+<b>Sexuality:</b>
+</div>
+<div id="sexuality">
+???
+</div>
+<div id="subjectspecies">
+<b>Species:</b>
+</div>
+<div id="species">
+???
+</div>
+<div id="subjectrace">
+<b>Race:</b>
+</div>
+<div id="race">
+Irish
+</div>
+<div id="subjectoccupation">
+<b>Job:</b>
+</div>
+<div id="occupation">
+<a target="_blank" href="http:ulreich.weebly.com">Student</a>
+</div>
+<div id="subjectheight">
+<b>Height:</b>
+</div>
+<div id="height">
+???
+</div>
+<div id="subjectweight">
+<b>Weight:</b>
+</div>
+<div id="weight">
+???
+</div>
+</div>
 <div id="tab13">
-<h1>???</h1>
+text
 </div>
+
 <div id="tab14">
-<h1>???</h1>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/A0HieQo.png"/>
 </div>
-
-
 <div id="tab15">
-<h1>???</h1>
+<div id="subjectname">
+<b>Name:</b>
+</div>
+<div id="name">
+Griffin
+</div>
+<div id="subjectage">
+<b>Age:</b>
+</div>
+<div id="age">
+???
+</div>
+<div id="subjectdate">
+<b>D.O.B.:</b>
+</div>
+<div id="date">
+???
+</div>
+<div id="subjectgender">
+<b>Gender:</b>
+</div>
+<div id="gender">
+Male
+</div>
+<div id="subjectsexuality">
+<b>Sexuality:</b>
+</div>
+<div id="sexuality">
+Hetero
+</div>
+<div id="subjectspecies">
+<b>Species:</b>
+</div>
+<div id="species">
+Human
+</div>
+<div id="subjectrace">
+<b>Race:</b>
+</div>
+<div id="race">
+Irish
+</div>
+<div id="subjectoccupation">
+<b>Job:</b>
+</div>
+<div id="occupation">
+<a target="_blank" href="http:ulreich.weebly.com">Student</a>
+</div>
+<div id="subjectheight">
+<b>Height:</b>
+</div>
+<div id="height">
+???
+</div>
+<div id="subjectweight">
+<b>Weight:</b>
+</div>
+<div id="weight">
+???
+</div>
 </div>
 <div id="tab16">
-<h1>???</h1>
+text
+</div>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Serenity.mp3" autostart="true" loop="true">
