@@ -1,732 +1,1528 @@
 <script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+<script language=javascript>document.title=("ѕεяεиιтч")</script>
 
 <style>
 body{
-background-image: url('') !important; 
+background-image: url('https://i.imgur.com/ElZnKA3.png') !important; 
 background-repeat:no-repeat !important; 
-background-position:center !important; 
+background-position:center !important;
 background-size:100% 100%;
 background-color:#B7CFFF;
 }
+
 ::-webkit-scrollbar {width: 3px; height: 3px;}
 ::-webkit-scrollbar-track {background: none;}
 ::-webkit-scrollbar-thumb {background: #646F8D;}
-#pic1 {
+
+#maincontainer {
 position:absolute;
-width:25%;
-height:100%;
 top:0%;
 left:0%;
-background-image: url('https://i.imgur.com/1lY0r1N.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-background-color:#B7CFFF;
-}
-#burder1 {
-position:absolute;
-background-color:#859DCD;
-width:2%;
 height:100%;
-top:0%;
-left:23%;
+width:100%;
 }
-#basicstitle {
+
+#introholder {
 position:absolute;
-background-color:#646F8D;
-padding:1%;
-width:15%;
-height:0.1%;
-top:70%;
-left:3%;
-font-family: 'Abril Fatface', cursive;
-text-align:center;
-font-size:2vh;
-letter-spacing:3px;
-color:#DCE7FF;
-line-height:0;
-}
-#basics {
-position:absolute;
-background-color:#CBE3F5;
-padding:1%;
-width:15%;
-height:15%;
-top:75%;
-left:3%;
-color:#000000;
-font-size:1.5vh;
-font-family: 'Josefin Sans', sans-serif;
-}
-#subjectname {
-background-color:#ADC5F5;
-position:absolute;
-width:23%;
-height:11.5%;
-top:12%;
-text-align:center;
-line-height:1.8;
-left:4%;
-}
-#name {
-position:absolute;
-width:23%;
-height:11.5%;
-top:12%;
-left:26%;
-text-align:center;
-line-height:1.8;
-}
-#subjectage {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:28%;
-text-align:center;
-line-height:1.8;
-left:4%;
-}
-#age {
-position:absolute;
-width:23%;
-height:11.5%;
-top:28%;
-text-align:center;
-line-height:1.8;
-left:26%;
-}
-#subjectdate {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:44%;
-text-align:center;
-line-height:1.8;
-left:4%;
-}
-#date {
-position:absolute;
-width:23%;
-height:11.5%;
-top:44%;
-text-align:center;
-line-height:1.8;
-left:26%;
-}
-#subjectgender {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:61%;
-text-align:center;
-line-height:1.8;
-left:4%;
-}
-#gender {
-position:absolute;
-width:23%;
-height:11.5%;
-top:61%;
-text-align:center;
-line-height:1.8;
-left:26%;
-}
-#subjectsexuality {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:77.2%;
-text-align:center;
-line-height:1.8;
-left:4%;
-}
-#sexuality {
-position:absolute;
-width:23%;
-height:11.5%;
-top:77.2%;
-text-align:center;
-line-height:1.8;
-left:26%;
-}
-#subjectspecies {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:12%;
-left:50%;
-text-align:center;
-line-height:1.6;
-}
-#species {
-position:absolute;
-width:22%;
-height:11.5%;
-top:12%;
-left:73%;
-text-align:center;
-line-height:1.8;
-}
-#subjectrace {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:28%;
-left:50%;
-text-align:center;
-line-height:1.6;
-}
-#race {
-position:absolute;
-width:22%;
-height:11.5%;
-top:28%;
-left:73%;
-text-align:center;
-line-height:1.8;
-}
-#subjectoccupation {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:44%;
-left:50%;
-text-align:center;
-line-height:1.6;
-}
-#occupation {
-position:absolute;
-width:22%;
-height:11.5%;
-top:44%;
-left:73%;
-text-align:center;
-line-height:1.8;
-}
-#subjectheight {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:61%;
-left:50%;
-text-align:center;
-line-height:1.6;
-}
-#height {
-position:absolute;
-width:22%;
-height:11.5%;
-top:61%;
-left:73%;
-text-align:center;
-line-height:1.8;
-}
-#subjectweight {
-position:absolute;
-background-color:#ADC5F5;
-width:23%;
-height:11.5%;
-top:77.2%;
-left:50%;
-text-align:center;
-line-height:1.6;
-}
-#weight {
-position:absolute;
-width:22%;
-height:11.5%;
-top:77.2%;
-left:73%;
-text-align:center;
-line-height:1.8;
-}
-#pic2 {
-position:absolute;
-width:25%;
-height:100%;
-top:0%;
-left:75%;
-background-image: url('https://i.imgur.com/q6xBkQI.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
-background-color:#B7CFFF;
-}
-#burder2 {
-position:absolute;
-background-color:#859DCD;
-width:2%;
-height:100%;
-top:0%;
-left:75%;
-}
-#detailstitle {
-position:absolute;
-background-color:#646F8D;
-padding:1%;
-width:15%;
-height:0.1%;
-top:70%;
-left:80%;
-font-family: 'Abril Fatface', cursive;
-text-align:center;
-font-size:2vh;
-letter-spacing:3px;
-color:#DCE7FF;
-line-height:0;
-}
-#details {
-position:absolute;
-background-color:#CBE3F5;
-overflow:auto;
-padding:1%;
-width:15%;
-height:15%;
-top:75%;
-left:80%;
-color:#000000;
-font-size:1.5vh;
-font-family: 'Josefin Sans', sans-serif;
-}
-#content {
-position:absolute;
-width:50%;
-height:100%;
-top:0%;
-left:25%;
-color:#000000;
-font-size:1.5vh;
-font-family: 'Josefin Sans', sans-serif;
-text-align:justify;
-}
-#box1 {
-position:absolute;
-overflow:auto;
-padding:1%;
-width:30%;
-height:40%;
-top:3%;
-left:3%;
-background-color:#ADC5F5;
-}
-#box2 {
-position:absolute;
-overflow:auto;
-padding:1%;
-width:30%;
-height:40%;
-top:3%;
-left:65%;
-background-color:#ADC5F5;
-}
-#box3 {
-position:absolute;
-overflow:auto;
-padding:1%;
-width:30%;
-height:40%;
-top:55%;
-left:3%;
-background-color:#ADC5F5;
-}
-#box4 {
-position:absolute;
-overflow:auto;
-padding:1%;
-width:30%;
-height:40%;
-top:55%;
-left:65%;
-background-color:#ADC5F5;
-}
-#line1 {
-position:absolute;
-border-bottom:2px dashed #859DCD;
-width:32%;
-top:50%;
-left:3%;
-}
-#line2 {
-position:absolute;
-border-bottom:2px dashed #859DCD;
-width:32%;
-top:50%;
-left:65%;
-}
-#image1 {
-position:absolute;
-width:28%;
-height:40%;
+background-color:#C1D9FF;
+border:1px dashed #697699;
 top:30%;
-left:36%;
+left:40%;
+height:20%;
+width:20%;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 }
-#circle1 {
+
+#introimage {
 position:absolute;
+border:1px solid #697699;
 border-radius:100%;
-width:15%;
-height:15%;
-top:8%;
-left:42.5%;
+top:32%;
+left:41%;
+height:16%;
+width:8%;
+background-image: url('https://i.imgur.com/yrl2L9u.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
-#circle2 {
+
+#introimage:hover {
+background-image: url('https://i.imgur.com/8wXAlvX.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#intronametitle {
 position:absolute;
-border-radius:100%;
-width:15%;
-height:15%;
-top:76%;
-left:42.5%;
+background-color:#B7CFFF;
+top:33.5%;
+left:50%;
+height:3%;
+width:4%;
+color:#697699;
+text-align:center;
+line-height:1.5;
+font-size:2vh;
+font-family: 'Dancing Script', cursive;
 }
+
+#introname {
+position:absolute;
+background-color:#D5EDFF;
+top:33.5%;
+left:54%;
+height:3%;
+width:5%;
+color:#000000;
+text-align:center;
+line-height:2;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#introagetitle {
+position:absolute;
+background-color:#B7CFFF;
+top:38.8%;
+left:50%;
+height:3%;
+width:4%;
+color:#697699;
+text-align:center;
+line-height:1.5;
+font-size:2vh;
+font-family: 'Dancing Script', cursive;
+}
+
+#introage {
+position:absolute;
+background-color:#D5EDFF;
+top:38.8%;
+left:54%;
+height:3%;
+width:5%;
+color:#000000;
+text-align:center;
+line-height:2;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#introgendertitle {
+position:absolute;
+background-color:#B7CFFF;
+top:44%;
+left:50%;
+height:3%;
+width:4%;
+color:#697699;
+text-align:center;
+line-height:1.5;
+font-size:2vh;
+font-family: 'Dancing Script', cursive;
+}
+
+#introgender {
+position:absolute;
+background-color:#D5EDFF;
+top:44%;
+left:54%;
+height:3%;
+width:5%;
+color:#000000;
+text-align:center;
+line-height:2;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+}
+
 #tabbox1 {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:20%;
-left:23.25%;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+top:52%;
+left:40%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
+
+#tabbox1:hover + #label1 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label1 {
+position:absolute;
+opacity:0;
+background-color:#D5EDFF;
+border:1px solid #99B1D7;
+top:58%;
+left:40%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 #tabbox2 {
 position:absolute;
-background-color:#ADC5F5;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:40%;
-left:23.25%;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+top:52%;
+left:43%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
+
+#tabbox2:hover + #label2 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label2 {
+position:absolute;
+opacity:0;
+background-color:#D5EDFF;
+border:1px solid #99B1D7;
+top:58%;
+left:43%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 #tabbox3 {
 position:absolute;
 background-color:#C1D9FF;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:60%;
-left:23.25%;
+border:1px dashed #697699;
+top:52%;
+left:46%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
+
+#tabbox3:hover + #label3 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label3 {
+position:absolute;
+opacity:0;
+background-color:#D5EDFF;
+border:1px solid #99B1D7;
+top:58%;
+left:46%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 #tabbox4 {
 position:absolute;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+top:52%;
+left:49%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4:hover + #label4 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label4 {
+position:absolute;
+opacity:0;
 background-color:#D5EDFF;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:80%;
-left:23.25%;
+border:1px solid #99B1D7;
+top:58%;
+left:49%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
-#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover {
-background-color:#646F8D;
+
+#tabbox5 {
+position:absolute;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+top:52%;
+left:52%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
-#friend1 {
+
+#tabbox5:hover + #label5 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label5 {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
+opacity:0;
+background-color:#D5EDFF;
+border:1px solid #99B1D7;
+top:58%;
+left:52%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+top:52%;
+left:55%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6:hover + #label6 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label6 {
+position:absolute;
+opacity:0;
+background-color:#D5EDFF;
+border:1px solid #99B1D7;
+top:58%;
+left:55%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox7 {
+position:absolute;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+top:52%;
+left:58%;
+height:4%;
+width:2%;
+color:#697699;
+text-align:center;
+line-height:2;
+font-size:2vh;
+font-family: Arial;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox7:hover + #label7 {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#label7 {
+position:absolute;
+opacity:0;
+background-color:#D5EDFF;
+border:1px solid #99B1D7;
+top:58%;
+left:58%;
+height:10%;
+width:2%;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+color:#808DC1;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bannerpic {
+position:absolute;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+width:44%;
+height:20%;
+top:15%;
+left:28%;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#bannertitle {
+position:absolute;
+background-color:#B7CFFF;
+width:12%;
+height:4%;
+top:17%;
+left:29%;
+color:#697699;
+text-align:center;
+line-height:1.3;
+font-size:3vh;
+font-family: 'Dancing Script', cursive;
+}
+
+#bannertext {
+position:absolute;
+width:12%;
+height:8%;
+top:21.5%;
+left:29%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#bannerbutton {
+position:absolute;
+background-color:#D5EDFF;
+width:12%;
 height:3%;
-top:20%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+top:30.5%;
+left:29%;
+text-align:center;
+font-size:1.5vh;
+line-height:2;
+color:#666666;
+font-family: 'Fjalla One', sans-serif;
+letter-spacing:5px;
+}
+
+#bigholder {
+position:absolute;
+background-color:#C1D9FF;
+border:1px dashed #697699;
+width:44%;
+height:46%;
+top:37%;
+left:28%;
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#detailpic1 {
+position:absolute;
+width:12%;
+height:42%;
+top:39%;
+left:29%;
+background-image: url('https://i.imgur.com/h0uXSNs.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#detailpic2 {
+position:absolute;
+width:12%;
+height:42%;
+top:39%;
+left:41%;
+background-image: url('https://i.imgur.com/4EwYIzG.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+}
+
+#detailtitle1 {
+position:absolute;
+background-color:#ADC5F5;
+width:4%;
+height:3%;
+left:54%;
+top:39%;
+color:#646F8D;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+font-family: 'Fjalla One', sans-serif;
+}
+
+#detail1 {
+position:absolute;
+background-color:#D5EDFF;
+width:4%;
+height:3%;
+left:58%;
+top:39%;
+color:000000;
+text-align:center;
+font-size:1.5vh;
+line-height:2.1;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#detailtitle2 {
+position:absolute;
+background-color:#ADC5F5;
+width:4%;
+height:3%;
+left:54%;
+top:44%;
+color:#646F8D;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+font-family: 'Fjalla One', sans-serif;
+}
+
+#detail2 {
+position:absolute;
+background-color:#D5EDFF;
+width:4%;
+height:3%;
+left:58%;
+top:44%;
+color:000000;
+text-align:center;
+font-size:1.5vh;
+line-height:2.1;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#detailtitle3 {
+position:absolute;
+background-color:#ADC5F5;
+width:4%;
+height:3%;
+left:54%;
+top:49%;
+color:#646F8D;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+font-family: 'Fjalla One', sans-serif;
+}
+
+#detail3 {
+position:absolute;
+background-color:#D5EDFF;
+width:4%;
+height:3%;
+left:58%;
+top:49%;
+color:000000;
+text-align:center;
+font-size:1.5vh;
+line-height:2.1;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#detailtitle4 {
+position:absolute;
+background-color:#ADC5F5;
+width:4%;
+height:3%;
+left:63%;
+top:39%;
+color:#646F8D;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+font-family: 'Fjalla One', sans-serif;
+}
+
+#detail4 {
+position:absolute;
+background-color:#D5EDFF;
+width:4%;
+height:3%;
+left:67%;
+top:39%;
+color:000000;
+text-align:center;
+font-size:1.5vh;
+line-height:2.1;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#detailtitle5 {
+position:absolute;
+background-color:#ADC5F5;
+width:4%;
+height:3%;
+left:63%;
+top:44%;
+color:#646F8D;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+font-family: 'Fjalla One', sans-serif;
+}
+
+#detail5 {
+position:absolute;
+background-color:#D5EDFF;
+width:4%;
+height:3%;
+left:67%;
+top:44%;
+color:000000;
+text-align:center;
+font-size:1.5vh;
+line-height:2.1;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#detailtitle6 {
+position:absolute;
+background-color:#ADC5F5;
+width:4%;
+height:3%;
+left:63%;
+top:49%;
+color:#646F8D;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+line-height:1.5;
+font-family: 'Fjalla One', sans-serif;
+}
+
+#detail6 {
+position:absolute;
+background-color:#D5EDFF;
+width:4%;
+height:3%;
+left:67%;
+top:49%;
+color:000000;
+text-align:center;
+font-size:1.5vh;
+line-height:2.1;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#personality {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:15%;
+height:22.7%;
+left:54%;
+top:54%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#appearancetrigger {
+position:absolute;
+background-color:#B7CFFF;
+width:1.7%;
+height:42.5%;
+left:29%;
+top:39%;
+color:#697699;
+text-align:center;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+text-transform:uppercase;
+font-family: 'Fjalla One', sans-serif;
+font-size:1.5vh;
+line-height:2.5;
+letter-spacing:5px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#appearancetrigger:hover + #appearance {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#appearance {
+position:absolute;
+opacity:0;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:19%;
+height:38.2%;
+top:39%;
+left:31.7%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#appearance:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#familyhistory {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:15%;
+height:38.2%;
+top:39%;
+left:29%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#historypic1 {
+position:absolute;
+width:6%;
+height:12%;
+top:39%;
+left:47%;
+background-image: url('https://i.imgur.com/wrZOIRT.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
-#friend2 {
+
+#historypic2 {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:30%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+width:6%;
+height:12%;
+top:54.25%;
+left:47%;
+background-image: url('https://i.imgur.com/3ZTOKzL.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
-#friend3 {
+
+#historypic3 {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:40%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+width:6%;
+height:12%;
+top:69.5%;
+left:47%;
+background-image: url('https://i.imgur.com/wY6WUWH.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
-#friend4 {
+
+#serenityhistory {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:50%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:15%;
+height:38.2%;
+top:39%;
+left:54%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#customs {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:18%;
+height:24.2%;
+top:39%;
+left:29%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#culturepic1 {
+position:absolute;
+width:6%;
+height:12%;
+top:69.5%;
+left:29%;
+background-image: url('https://i.imgur.com/pw6qJcH.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
-#friend5 {
+
+#culturepic2 {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:60%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+width:6%;
+height:12%;
+top:69.5%;
+left:36%;
+background-image: url('https://i.imgur.com/xLta2Hq.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
-#friend6 {
+
+#culturepic3 {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
-height:3%;
-top:70%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+width:6%;
+height:12%;
+top:69.5%;
+left:43%;
+background-image: url('https://i.imgur.com/ESZfClX.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
-#friend7 {
+
+#culture {
 position:absolute;
-background-color:#99B1E1;
-border-radius:100%;
-width:1.5%;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:18%;
+height:38.2%;
+top:39%;
+left:51%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#medium {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:17.5%;
+height:38.2%;
+top:39%;
+left:29%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#inventorytitle {
+position:absolute;
+background-color:#B7CFFF;
+width:21.5%;
 height:3%;
-top:80%;
-left:75.25%;
-background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+top:39%;
+left:49.5%;
+color:#697699;
+text-align:center;
+line-height:1.5;
+font-size:2vh;
+font-family: 'Dancing Script', cursive;
+}
+
+#item1 {
+position:absolute;
+background-color:#FFFFFF;
+width:3.5%;
+height:7%;
+top:44%;
+left:49.5%;
+background-image: url('https://i.imgur.com/BGMmZ2C.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:100% 100%;
 }
+
+#item2 {
+position:absolute;
+background-color:#FFFFFF;
+width:3.5%;
+height:7%;
+top:44%;
+left:54%;
+background-image: url('https://i.imgur.com/Ra8YB9f.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#item3 {
+position:absolute;
+background-color:#FFFFFF;
+width:3.5%;
+height:7%;
+top:44%;
+left:58.5%;
+background-image: url('https://i.imgur.com/yjruR7X.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#item4 {
+position:absolute;
+background-color:#FFFFFF;
+width:3.5%;
+height:7%;
+top:44%;
+left:63%;
+background-image: url('https://i.imgur.com/SVMfcD2.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#item5 {
+position:absolute;
+background-color:#FFFFFF;
+width:3.5%;
+height:7%;
+top:44%;
+left:67.5%;
+background-image: url('https://i.imgur.com/f3aGqlT.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#inventory {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:19.5%;
+height:24.2%;
+top:53%;
+left:49.5%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#magic1 {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:15%;
+height:38.2%;
+top:39%;
+left:29%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#magic2 {
+position:absolute;
+padding:1%;
+overflow:auto;
+background-color:#CBE3F5;
+width:15%;
+height:38.2%;
+top:39%;
+left:47%;
+text-align:justify;
+font-size:1.5vh;
+font-family: 'Josefin Sans', sans-serif;
+color:#000000;
+}
+
+#universals {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:65%;
+top:39%;
+background-image: url('https://31.media.tumblr.com/9db19ba9c42026f282d6aafcbf0583f2/tumblr_mzjs2409Om1t4opd2o1_500.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#unitabbox {
+position:absolute;
+background-color:rgba(105, 118, 153, 0.8);
+width:6.25%;
+height:12.5%;
+left:65%;
+top:39%;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#unitabbox:hover {
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#faith {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:65%;
+top:53.5%;
+background-image: url('http://pa1.narvii.com/5956/6e096d06d5bc7a54dfe09329e596cbe8316559ce_00.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#faithtabbox {
+position:absolute;
+background-color:rgba(105, 118, 153, 0.8);
+width:6.25%;
+height:12.5%;
+left:65%;
+top:53.5%;
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#faithtabbox:hover {
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#truepract {
+position:absolute;
+width:6.25%;
+height:13.3%;
+left:65%;
+top:68%;
+background-image: url('https://media3.giphy.com/media/xUOxfjsW9fWPqEWouI/source.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#grandfather {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:29%;
+top:39%;
+background-image: url('https://i.imgur.com/jQvRqX6.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#grandfathertab {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:29%;
+top:39%;
+background-color:rgba(105, 118, 153, 0.8);
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#grandfathertab:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#father {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:29%;
+top:53.5%;
+background-image: url('https://i.imgur.com/Y7GUHJ0.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#fathertab:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#fathertab {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:29%;
+top:53.5%;
+background-color:rgba(105, 118, 153, 0.8);
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#mother {
+position:absolute;
+width:6.25%;
+height:13.3%;
+left:29%;
+top:68%;
+background-image: url('https://i.imgur.com/jqu6rCh.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#mothertab {
+position:absolute;
+width:6.25%;
+height:13.3%;
+left:29%;
+top:68%;
+background-color:rgba(105, 118, 153, 0.8);
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#mothertab:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#brother {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:36.25%;
+top:39%;
+background-image: url('https://i.imgur.com/jVqIMNM.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#brothertab {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:36.25%;
+top:39%;
+background-color:rgba(105, 118, 153, 0.8);
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#brothertab:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cousin {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:36.25%;
+top:53.5%;
+background-image: url('https://i.imgur.com/BmkRl50.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#cousintab {
+position:absolute;
+width:6.25%;
+height:12.5%;
+left:36.25%;
+top:53.5%;
+background-color:rgba(105, 118, 153, 0.8);
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#cousintab:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#sire {
+position:absolute;
+width:6.25%;
+height:13.3%;
+left:36.25%;
+top:68%;
+background-image: url('https://i.imgur.com/sJMiR4w.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#siretab {
+position:absolute;
+width:6.25%;
+height:13.3%;
+left:36.25%;
+top:68%;
+background-color:rgba(105, 118, 153, 0.8);
+text-align:center;
+text-transform:uppercase;
+font-size:2vh;
+color:#FFFFFF;
+line-height:6.5;
+font-family: 'Fjalla One', sans-serif;
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#siretab:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 #familypic {
 position:absolute;
-width:28%;
-height:50%;
-top:25%;
-left:36%;
+width:12%;
+height:42.3%;
+top:39%;
+left:43.75%;
 }
+
 #familybasics {
 position:absolute;
 background-color:#CBE3F5;
 padding:1%;
-width:26%;
-height:20%;
-top:25%;
-left:67%;
+width:12%;
+height:15%;
+top:39%;
+left:57%;
+text-align:center;
 color:#000000;
 font-size:1.5vh;
 font-family: 'Josefin Sans', sans-serif;
 }
+
 #familyinfo {
 position:absolute;
-overflow:auto;
+background-color:#B7CFFF;
 padding:1%;
-background-color:#ADC5F5;
-width:26%;
-height:36%;
-top:50%;
-left:67%;
+overflow:auto;
+width:12%;
+height:17%;
+top:60%;
+left:57%;
+text-align:justify;
 color:#000000;
 font-size:1.5vh;
 font-family: 'Josefin Sans', sans-serif;
 }
-#fancyfancy {
+
+#credittitle {
 position:absolute;
-width:28%;
-height:10%;
-top:12%;
-left:67%;
-text-transform:uppercase;
-font-family: 'Fjalla One', sans-serif;
+background-color:#B7CFFF;
+width:42%;
+height:4%;
+top:39%;
+left:29%;
+color:#697699;
 text-align:center;
+line-height:1.8;
 font-size:2.5vh;
-color:#FFFFFF;
-line-height:5.8;
-background-image: url('https://i.imgur.com/2yLbZZw.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:100% 100%;
+font-family: 'Fjalla One', sans-serif;
+letter-spacing:5px;
 }
-#familytab1 {
+
+#imagecredits {
 position:absolute;
-background-color:#ADC5F5;
-width:28%;
-height:10%;
-top:12%;
-left:5%;
-}
-#ftabbox1 {
-position:absolute;
-width:28%;
-height:10%;
-top:12%;
-left:5%;
-}
-#familytab2 {
-position:absolute;
-background-color:#ADC5F5;
-width:28%;
-height:10%;
-top:51.5%;
-left:5%;
-}
-#ftabbox2 {
-position:absolute;
-width:28%;
-height:10%;
-top:51.5%;
-left:5%;
-}
-#familytab3 {
-position:absolute;
-background-color:#ADC5F5;
-width:28%;
-height:10%;
-top:65%;
-left:5%;
-}
-#ftabbox3 {
-position:absolute;
-width:28%;
-height:10%;
-top:65%;
-left:5%;
-}
-#familytab4 {
-position:absolute;
-background-color:#ADC5F5;
-width:28%;
-height:10%;
-top:78%;
-left:5%;
-}
-#ftabbox4 {
-position:absolute;
-width:28%;
-height:10%;
-top:78%;
-left:5%;
-}
-#familytab5 {
-position:absolute;
-background-color:#ADC5F5;
-width:28%;
-height:10%;
-top:25%;
-left:5%;
-}
-#ftabbox5 {
-position:absolute;
-width:28%;
-height:10%;
-top:25%;
-left:5%;
-}
-#familytab6 {
-position:absolute;
-background-color:#ADC5F5;
-width:28%;
-height:10%;
-top:38%;
-left:5%;
-}
-#ftabbox6 {
-position:absolute;
-width:28%;
-height:10%;
-top:38%;
-left:5%;
-}
-#fpic {
-position:absolute;
-background-color:#B7CFFF;
-height:75%;
-width:25%;
-left:5%;
-top:12%;
-}
-#fline1 {
-position:absolute;
-border-left:2px solid #859DCD;
-height:75%;
-left:33%;
-top:12%;
-}
-#fline2 {
-position:absolute;
-border-bottom:1.5px solid #859DCD;
-width:62%;
-left:33%;
-top:50%;
-}
-#fname {
-position:absolute;
-background-color:#B7CFFF;
-width:57%;
-height:27%;
-top:12%;
-left:38%;
-text-align:center;
-line-height:1.9;
-}
-#ftitle {
-position:absolute;
-background-color:#B7CFFF;
-width:57%;
+background-color:#CBE3F5;
+padding:1%;
+overflow:auto;
+width:18.5%;
 height:26%;
-top:61%;
-left:38%;
-text-align:center;
-line-height:1.9;
+top:45%;
+left:29%;
+color:#000000;
+font-size:1.5vh;
+text-align:justify;
+font-family: 'Josefin Sans', sans-serif;
 }
+
+#misccredits {
+position:absolute;
+background-color:#CBE3F5;
+padding:1%;
+overflow:auto;
+width:18.5%;
+height:26%;
+top:45%;
+left:50.5%;
+color:#000000;
+font-size:1.5vh;
+text-align:justify;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#creatorcredits {
+position:absolute;
+background-color:#B7CFFF;
+width:42%;
+height:4%;
+top:77.5%;
+left:29%;
+color:#666666;
+text-align:center;
+line-height:4;
+font-size:1vh;
+font-family: Arial;
+}
+
 .tabs{
 display:block;
 width:100%;
 height:100%;
-border-radius:100%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
+
 .tabs:hover {
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22 {
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24,#tab25,#tab26,#tab27,#tab28,#tab29,#tab30,#tab31,#tab32,#tab33,#tab34,#tab35 {
 display: none;
 }
+
 h1 {
 background-color:#646F8D;
 border-left:10px solid #A0ABC9;
@@ -737,936 +1533,755 @@ font-size:2vh;
 text-align:center;
 letter-spacing:5px;
 }
+
 i {
 color:#666666;
 }
+
 a {
 color:#C9A1AC;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
+
 a:hover {
 color:#666666;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
+
 b {
 color:#646F8D;
 text-transform:uppercase;
 font-family: 'Fjalla One', sans-serif;
 }
+
+.snowflake {
+  color: #BCCCED;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
 </style>
 
-<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One|Josefin+Sans" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('familypic').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation2(id) {document.getElementById('familybasics').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation3(id) {document.getElementById('familyinfo').innerHTML=document.getElementById(id).innerHTML}</script>
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/others/oth-8/oth706.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One|Josefin+Sans|Dancing+Script" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('maincontainer').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('inventory').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('magic1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('magic2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('familypic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation5(id) {document.getElementById('familybasics').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation6(id) {document.getElementById('familyinfo').innerHTML=document.getElementById(id).innerHTML}</script>
 
 <html>
 
-<div id="pic1"></div>
-<div id="burder1"></div>
-<div id="basicstitle">
-Basic Information
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ✾
+  </div>
+  <div class="snowflake">
+  ✽
+  </div>
+  <div class="snowflake">
+  ❃
+  </div>
+  <div class="snowflake">
+  ❋
+  </div>
+  <div class="snowflake">
+  ✾
+  </div>
+  <div class="snowflake">
+  ✽
+  </div>
+  <div class="snowflake">
+    ❃
+  </div>
+  <div class="snowflake">
+    ❋
+  </div>
+  <div class="snowflake">
+    ✾
+  </div>
+  <div class="snowflake">
+    ✽
+  </div>
+  <div class="snowflake">
+    ❃
+  </div>
+  <div class="snowflake">
+    ❋
+  </div>
 </div>
-<div id="basics">
-<div id="subjectname">
-<b>Name:</b>
+
+<div id="maincontainer">
+<div id="introholder"></div>
+<div id="introimage"></div>
+<div id="intronametitle">
+Name:
 </div>
-<div id="name">
+<div id="introname">
 Serenity
 </div>
-<div id="subjectage">
-<b>Age:</b>
+<div id="introagetitle">
+Age:
 </div>
-<div id="age">
-Early 20's
+<div id="introage">
+Twenty One
 </div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
+<div id="introgendertitle">
+Gender:
 </div>
-<div id="date">
-Jan. 5th
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
+<div id="introgender">
 Female
 </div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Demi
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-<a target="_blank" title="Ulreich University" href="http://ulreich.weebly.com">Student</a>
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-5'6"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-120 lbs.
-</div>
-</div>
-
-<div id="content">
-<div id="box1">
-<h1>Family History</h1>
-A clan of very proud humans founded during the ancient times, when Ireland consisted mostly of vikings, barbarians, and aboriginals. Magic had become a concept finally available for the average individual’s use, proper training required only for true mastery. Humans obtained godlike powers far too easily, which led to misuse and inevitably a war between the mundane and the mystical. With pride and honor, the very first McKenna Patriarch sided his family with the humans and fought to destroy any hold or claim magic beasts and beings had over their land. Their success was noteworthy, impressive, but unfortunately short lived.
-<br><br>
-Another family stood in their way, contested their mission; a clan of semi-human warriors known as the O’Connors. They had loyalty ties among humans and magic beasts alike, so when the time came for them to face the McKennas they offered a peaceful option of surrender. The original Patriarch wouldn’t have it, he refused to allow such a cowardly blow to his pride. Kneel before another war clan in surrender before the fighting had even begun? Never! A battle finally commenced between them, long and arduous, but after the slaughtering of many of his descendants defeat had to be accepted. His rivals emerged victorious.
-<br><br>
-It was customary to wipe out any who shared the blood of those that opposed a warrior family, but the victorious Patriarch was sympathetic toward his human brethren, and was even further motivated to spare what remained of them because of special skills they possessed. As it turned out, McKenna females made for exceptional healers, a vital piece of a strategic puzzle that O’Connors lacked severely. He promised to let them live on, even reward their loyalty when the war was over, if they agreed to serve his family. Begrudgingly, the between Irishmen accepted the offer. To this day, thousands upon thousands of years later, they still bow their heads and carry the weight bestowed by their conquerors.
-</div>
-<div id="line1"></div>
-<div id="box2">
-<h1>Family Customs</h1>
-Ceremonies are central to McKenna customs. They possess a few that are deemed extremely important, and all who carry their bloodline are expected to take part in every single one they possibly can. Showmanship is a big deal, and even if they are a clan of barbaric warriors they often set their violent tendencies aside and don the garb of wealthy upper class nobles for big family gatherings.
-<br><br>
-<b>Gender Reveal</b><br>
-When an infant reaches the point of development in its mother’s womb where its gender can be determined, its parents are expected to reveal this information to the rest of their immediate family and the Patriarch. This allows them to keep track of how many individuals of each gender there are, as well as opens the door for the expecting parents to start planning their child’s future accordingly.
-<br><br>
-<b>Celebration of New Life</b><br>
-While most humans across the world have a “Christening” for their newly born children, McKennas do not believe in the same deity, and therefore their similar custom still differs. The newborn’s immediate family gathers together, dabbing “holy” oil on the babe’s forehead, and congratulate them for joining the ranks of their proud clan. A successful birth is a blessing meant to be treasured and forever cemented into history.
-<br><br>
-<b>Coming of Age</b><br>
-Very little is left up to a McKenna child’s own decisions, the higher they rank in the family social ladder the less control they have over their own lives. Whatever meager slim pickings of choices they’re allowed to make are typically done during this particular ceremony. Akin to a graduation, it’s the recognition of a child’s growth from adolescence into adulthood, typically taking place during their Sixteenth year. During this celebration of sorts the new “adult(s)” must decide on a career path for themselves, beginning their journey into a specific trade, ensuring success in mundane society and cementing their future source of income.
-<br><br>
-<b>Marriage</b><br>
-More often than not marriages are arranged, but regardless of whether the suitors pick their life partner for themselves or have one decided for them marriage is a very big deal. Not only are the exchanged vows seen as sacred promises never to be broken, it is also often the welcoming of an outsider into the family line. Spouses who were not born with McKenna blood are expected to willingly accept a “blood donation” from their partner, cementing their place among their new peers as holders of more than just a shared name.
-<br><br>
-<b>Funerals</b><br>
-Death is a part of life, one cannot exist without the other, but that doesn’t mean loss of a loved one is easy to bear. McKennas possess a strong sense of community and often mourn with one another even if the loss wasn’t close to their hearts. Funerals are perhaps the biggest ceremonies they hold, attracting members of the family far and wide, even if they’d never met the individual who died.
-</div>
-<div id="line2"></div>
-<div id="box3">
-<h1>Serenity's Story</h1>
-The current McKenna Patriarch could trace his exact bloodline straight back to the original, a direct descendant of the man who led them into battle and lost. It was his duty to continue this important part of the family tree, leading to an arranged marriage that produced him multiple sons. The eldest followed in his father’s footsteps, married off to a woman from another clan for political gain, and producing two more heirs: Niall and Serenity McKenna. Niall came first, two years before his younger sister, and is considered the “true” Patriarch heir. While the exact same blood runs through Serenity’s veins she isn’t considered any more important than every other female born into their clan. Her only value lies in her capacity to be bred for the sake of producing more exquisite heirs, and her talent in the healing arts. 
-<br><br>
-Ever since her gender became apparent, before the girl was even birthed, an entire framework had been laid for the rest of her life. Classes were arranged, schedules manifested, and high expectations soon followed suit. Serenity was supposed to be a role model for her fellow McKenna women, a prime example of their idea of “perfection,” but as a human she naturally fell short. The issue with marrying young men to women from other varying cultures was a strong one in this case. The young child’s mother--whom she inherited her blue hair from--was extremely independent and did not behave as they preferred. Unfortunately her daughter also inherited some of this spunk, leading to many drama based issues and nights of punishment.
-<br><br>
-Make no mistake, the impressionable child tried her very best, pursued knowledge and excelled in her schooling, but her behavior always fell short. She lacked the capacity to remain indifferent, far too passionate and unable to control the extent of her powerful emotions. It eventually reached a point where even her patient grandfather gave up on her, disowning her as an “heir” entirely. Instead of fulfilling her purpose of being married off for politics and being a shining example to her peers, Serenity was instead handed right over to the O’Connors as a potential Faith Mage for them to utilize. She was assigned to be a young battlemage’s squire. Griffin was the name of the young lady’s new master, and his current location happened to be at an establishment of learning for mages. The perfect environment for a blossoming practitioner of Faith to simultaneously achieve her newly assigned purpose and grow in magical strength.
-</div>
-<div id="box4">
-<h1>McKenna Culture</h1>
-On the surface they appear to be a very organized and thoughtful folk. Their prestigious mentality is common knowledge throughout the multiverse (for those who actually know of them). Tendencies to have entire lifeplans for unborn children are tropes often passed in conversation or rumor. While this appears to be a sign of regality it actually has more to do with their most prominent fatal flaw: pride. McKennas aren’t necessarily extremely self centered, but they do think pretty highly of themselves. They believe their own foundational culture to be the proper mindset for any community and often look down on other methods or customs, bad mouthing them behind closed doors in place of showing offense to their faces. 
-<br><br>
-High expectations leave little room for mistakes. While they aren’t overly judgemental of other human beings they are extremely critical to their own kind, constantly worried about public image and the like. Errors are not easily forgotten, one simple slip up could be stapled to a McKenna’s back for the rest of their life. This creates a tension based contrast to their natural tendency to prefer each other’s company over those of outsiders. They are a close knit clan that secretly harbors spite for others who share their blood.
-<br><br>
-This issue actually goes even deeper, namely in conservative views regarding the roles of individuals among their ranks based entirely on their genitalia. Females and Males hold different roles in society and aren’t allowed to break away from these customs. Men are expected to “bring home the bacon,” provide for their families and establish a successful career in whatever society they’ve integrated themselves into. Masculinity is a big deal in this patriarchal society, if one possesses a male’s sexual organ they are to be battle-trained warriors with powerful offensive or defensive magic. On the opposite end, women are homemakers first and servants second. Any with a female’s reproductive system exist only to breed and care for children. Their magic must be centered around supporting the men and children through utility, or being a true caretaker with the talents of a healer.
-<br>
-No middle ground exists, causing major conflict for those whose personality or sexuality does not fall within these confines. Serenity and Niall know firsthand how little patience their clan has for those who do not fit within their strict social constructs. Ironic considering how progressive they claim to be as an established Mage family.
-</div>
-<div id="circle1">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/57HAcUR.png"/>
-</div>
-<div id="image1">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/RRtJit2.png"/>
-</div>
-<div id="circle2">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/uy0gqOC.png"/>
-</div>
-</div>
-
-<div id="pic2"></div>
-<div id="burder2"></div>
-<div id="detailstitle">
-Detailed Information
-</div>
-<div id="details">
-<b>Appearance</b><br>
-A noble damsel through and through. Serenity McKenna is a very dainty woman, and her petiteness only seems to add to the illusion of frailty. While not overly pronounced her bosom and rear are voluptuous in comparison to her thin frame. Her complexion is rather pale, but has the benefit of coloration thanks to the natural soft blue hues of her long silky hair and matching big round eyes. One cute little nose and full rosy pink lips add to the plentiful feminine charm found in her heart shaped face. Serenity’s style is arguably distinct. Despite hailing from the New World she was born into a Mage family, opening the door for having “exotic” tastes in clothing that might be considered too strange among other humans in the modern mundane world. She takes a strong liking to attire reminiscent of the “Victorian” style and era, but with a modern spin. Serenity loves corsets, petticoats, fluffy flowing skirts, and blouses with slightly inflated sleeves. She generally prefers dresses and skirts to pants, but can be found wearing them on occasion if she believes them necessary.
-<br><br>
-<b>Personality</b><br>
-Her passive state is one of detached reservation. The young Faith Mage does her very best to appear as formal and polite as possible in typical situations and scenarios. In reality she is an incredibly passionate woman who struggles with self control. Her emotions often get the best of her for even the smallest reasons. That isn’t to say she blows things out of proportion, but if an event is intended to trigger some kind of emotional response it is very likely she will be unable to stop herself. Serenity is stubborn, loyal, and possesses a big heart, but feels the need to repress these traits thanks to the culture of her family.
-</div>
-
-<div id="friend1"></div>
-<div id="friend2"></div>
-<div id="friend3"></div>
-<div id="friend4"></div>
-<div id="friend5"></div>
-<div id="friend6"></div>
-<div id="friend7"></div>
 
 <div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1')"></span>
+<span class="tabs" onClick="changeNavigation ('tab2')">◆</span>
+</div>
+<div id="label1">
+Details
 </div>
 <div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab2')"></span>
+<span class="tabs" onClick="changeNavigation ('tab3')">✧</span>
+</div>
+<div id="label2">
+History
 </div>
 <div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab3')"></span>
+<span class="tabs" onClick="changeNavigation ('tab4')">✶</span>
+</div>
+<div id="label3">
+Culture
 </div>
 <div id="tabbox4">
-<span class="tabs" onClick="changeNavigation ('tab4')"></span>
+<span class="tabs" onClick="changeNavigation ('tab5')">❖</span>
+</div>
+<div id="label4">
+Items
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab6')">✶</span>
+</div>
+<div id="label5">
+Magic
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab7')">✧</span>
+</div>
+<div id="label6">
+Family
+</div>
+<div id="tabbox7">
+<span class="tabs" onClick="changeNavigation ('tab8')">◆</span>
+</div>
+<div id="label7">
+Credits
+</div>
 </div>
 
 <div id="tab1">
-<div id="box1">
-<h1>Family History</h1>
-A clan of very proud humans founded during the ancient times, when Ireland consisted mostly of vikings, barbarians, and aboriginals. Magic had become a concept finally available for the average individual’s use, proper training required only for true mastery. Humans obtained godlike powers far too easily, which led to misuse and inevitably a war between the mundane and the mystical. With pride and honor, the very first McKenna Patriarch sided his family with the humans and fought to destroy any hold or claim magic beasts and beings had over their land. Their success was noteworthy, impressive, but unfortunately short lived.
-<br><br>
-Another family stood in their way, contested their mission; a clan of semi-human warriors known as the O’Connors. They had loyalty ties among humans and magic beasts alike, so when the time came for them to face the McKennas they offered a peaceful option of surrender. The original Patriarch wouldn’t have it, he refused to allow such a cowardly blow to his pride. Kneel before another war clan in surrender before the fighting had even begun? Never! A battle finally commenced between them, long and arduous, but after the slaughtering of many of his descendants defeat had to be accepted. His rivals emerged victorious.
-<br><br>
-It was customary to wipe out any who shared the blood of those that opposed a warrior family, but the victorious Patriarch was sympathetic toward his human brethren, and was even further motivated to spare what remained of them because of special skills they possessed. As it turned out, McKenna females made for exceptional healers, a vital piece of a strategic puzzle that O’Connors lacked severely. He promised to let them live on, even reward their loyalty when the war was over, if they agreed to serve his family. Begrudgingly, the between Irishmen accepted the offer. To this day, thousands upon thousands of years later, they still bow their heads and carry the weight bestowed by their conquerors.
+<div id="introholder"></div>
+<div id="introimage"></div>
+<div id="intronametitle">
+Name:
 </div>
-<div id="line1"></div>
-<div id="box2">
-<h1>Family Customs</h1>
-Ceremonies are central to McKenna customs. They possess a few that are deemed extremely important, and all who carry their bloodline are expected to take part in every single one they possibly can. Showmanship is a big deal, and even if they are a clan of barbaric warriors they often set their violent tendencies aside and don the garb of wealthy upper class nobles for big family gatherings.
-<br><br>
-<b>Gender Reveal</b><br>
-When an infant reaches the point of development in its mother’s womb where its gender can be determined, its parents are expected to reveal this information to the rest of their immediate family and the Patriarch. This allows them to keep track of how many individuals of each gender there are, as well as opens the door for the expecting parents to start planning their child’s future accordingly.
-<br><br>
-<b>Celebration of New Life</b><br>
-While most humans across the world have a “Christening” for their newly born children, McKennas do not believe in the same deity, and therefore their similar custom still differs. The newborn’s immediate family gathers together, dabbing “holy” oil on the babe’s forehead, and congratulate them for joining the ranks of their proud clan. A successful birth is a blessing meant to be treasured and forever cemented into history.
-<br><br>
-<b>Coming of Age</b><br>
-Very little is left up to a McKenna child’s own decisions, the higher they rank in the family social ladder the less control they have over their own lives. Whatever meager slim pickings of choices they’re allowed to make are typically done during this particular ceremony. Akin to a graduation, it’s the recognition of a child’s growth from adolescence into adulthood, typically taking place during their Sixteenth year. During this celebration of sorts the new “adult(s)” must decide on a career path for themselves, beginning their journey into a specific trade, ensuring success in mundane society and cementing their future source of income.
-<br><br>
-<b>Marriage</b><br>
-More often than not marriages are arranged, but regardless of whether the suitors pick their life partner for themselves or have one decided for them marriage is a very big deal. Not only are the exchanged vows seen as sacred promises never to be broken, it is also often the welcoming of an outsider into the family line. Spouses who were not born with McKenna blood are expected to willingly accept a “blood donation” from their partner, cementing their place among their new peers as holders of more than just a shared name.
-<br><br>
-<b>Funerals</b><br>
-Death is a part of life, one cannot exist without the other, but that doesn’t mean loss of a loved one is easy to bear. McKennas possess a strong sense of community and often mourn with one another even if the loss wasn’t close to their hearts. Funerals are perhaps the biggest ceremonies they hold, attracting members of the family far and wide, even if they’d never met the individual who died.
+<div id="introname">
+Serenity
 </div>
-<div id="line2"></div>
-<div id="box3">
-<h1>Serenity's Story</h1>
-The current McKenna Patriarch could trace his exact bloodline straight back to the original, a direct descendant of the man who led them into battle and lost. It was his duty to continue this important part of the family tree, leading to an arranged marriage that produced him multiple sons. The eldest followed in his father’s footsteps, married off to a woman from another clan for political gain, and producing two more heirs: Niall and Serenity McKenna. Niall came first, two years before his younger sister, and is considered the “true” Patriarch heir. While the exact same blood runs through Serenity’s veins she isn’t considered any more important than every other female born into their clan. Her only value lies in her capacity to be bred for the sake of producing more exquisite heirs, and her talent in the healing arts. 
-<br><br>
-Ever since her gender became apparent, before the girl was even birthed, an entire framework had been laid for the rest of her life. Classes were arranged, schedules manifested, and high expectations soon followed suit. Serenity was supposed to be a role model for her fellow McKenna women, a prime example of their idea of “perfection,” but as a human she naturally fell short. The issue with marrying young men to women from other varying cultures was a strong one in this case. The young child’s mother--whom she inherited her blue hair from--was extremely independent and did not behave as they preferred. Unfortunately her daughter also inherited some of this spunk, leading to many drama based issues and nights of punishment.
-<br><br>
-Make no mistake, the impressionable child tried her very best, pursued knowledge and excelled in her schooling, but her behavior always fell short. She lacked the capacity to remain indifferent, far too passionate and unable to control the extent of her powerful emotions. It eventually reached a point where even her patient grandfather gave up on her, disowning her as an “heir” entirely. Instead of fulfilling her purpose of being married off for politics and being a shining example to her peers, Serenity was instead handed right over to the O’Connors as a potential Faith Mage for them to utilize. She was assigned to be a young battlemage’s squire. Griffin was the name of the young lady’s new master, and his current location happened to be at an establishment of learning for mages. The perfect environment for a blossoming practitioner of Faith to simultaneously achieve her newly assigned purpose and grow in magical strength.
+<div id="introagetitle">
+Age:
 </div>
-<div id="box4">
-<h1>McKenna Culture</h1>
-On the surface they appear to be a very organized and thoughtful folk. Their prestigious mentality is common knowledge throughout the multiverse (for those who actually know of them). Tendencies to have entire lifeplans for unborn children are tropes often passed in conversation or rumor. While this appears to be a sign of regality it actually has more to do with their most prominent fatal flaw: pride. McKennas aren’t necessarily extremely self centered, but they do think pretty highly of themselves. They believe their own foundational culture to be the proper mindset for any community and often look down on other methods or customs, bad mouthing them behind closed doors in place of showing offense to their faces. 
-<br><br>
-High expectations leave little room for mistakes. While they aren’t overly judgemental of other human beings they are extremely critical to their own kind, constantly worried about public image and the like. Errors are not easily forgotten, one simple slip up could be stapled to a McKenna’s back for the rest of their life. This creates a tension based contrast to their natural tendency to prefer each other’s company over those of outsiders. They are a close knit clan that secretly harbors spite for others who share their blood.
-<br><br>
-This issue actually goes even deeper, namely in conservative views regarding the roles of individuals among their ranks based entirely on their genitalia. Females and Males hold different roles in society and aren’t allowed to break away from these customs. Men are expected to “bring home the bacon,” provide for their families and establish a successful career in whatever society they’ve integrated themselves into. Masculinity is a big deal in this patriarchal society, if one possesses a male’s sexual organ they are to be battle-trained warriors with powerful offensive or defensive magic. On the opposite end, women are homemakers first and servants second. Any with a female’s reproductive system exist only to breed and care for children. Their magic must be centered around supporting the men and children through utility, or being a true caretaker with the talents of a healer.
-<br>
-No middle ground exists, causing major conflict for those whose personality or sexuality does not fall within these confines. Serenity and Niall know firsthand how little patience their clan has for those who do not fit within their strict social constructs. Ironic considering how progressive they claim to be as an established Mage family.
+<div id="introage">
+Twenty One
 </div>
-<div id="circle1">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/57HAcUR.png"/>
+<div id="introgendertitle">
+Gender:
 </div>
-<div id="image1">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/RRtJit2.png"/>
+<div id="introgender">
+Female
 </div>
-<div id="circle2">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/uy0gqOC.png"/>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab2')">◆</span>
+</div>
+<div id="label1">
+Details
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3')">✧</span>
+</div>
+<div id="label2">
+History
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab4')">✶</span>
+</div>
+<div id="label3">
+Culture
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab5')">❖</span>
+</div>
+<div id="label4">
+Items
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab6')">✶</span>
+</div>
+<div id="label5">
+Magic
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab7')">✧</span>
+</div>
+<div id="label6">
+Family
+</div>
+<div id="tabbox7">
+<span class="tabs" onClick="changeNavigation ('tab8')">◆</span>
+</div>
+<div id="label7">
+Credits
 </div>
 </div>
 
 <div id="tab2">
-<div id="box1">
-<h1>Inventory</h1>
-<b>Suitcase (x3)</b><br>
-Appear more like hardcover oversized briefcases but contain all of her belongings: clothes, brushes, makeup, accessories, books, and various feminine essentials. Each suitcase has three buckle latches, two handles, and four tiny wheels on its bottom for rolling over smooth flat surfaces.
-<br><br>
-<b>Apothecary Satchel</b><br>
-A small minor purse-sized pack with loops on its back so it can be attached to varying kinds of straps or belts for the sake of practicality. Inside are mini fabric compartments, and Serenity has sorted various natural herbs and minor nonmagic medicines (Ibuprofen, Penicillin, Ginger Supplements, etc) into its available spaces.
-<br><br>
-<b>Journal</b><br>
-Typical leatherbound journal for handwriting notes in. It’s not very sizeable and is already half full of first aid study notes from required medic lessons taught at home.
-<br><br>
-<b>Pen (x3)</b><br>
-Plain ballpoint ink pens, two with black ink and one with dark blue.
-<br><br>
-<b>Family Crest</b><br>
-Coin-sized weighted pendant that dangles on a basic chain around her neck. It depicts the McKenna family crest in fancy metals and designs (Iron grade in its entirety).
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
 </div>
-<div id="line1"></div>
-<div id="box2">
-<h1>Mana Manipulation</h1>
-<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+<div id="bannertitle">
+Serenity McKenna
 </div>
-<div id="line2"></div>
-<div id="box3">
-<h1>Medium</h1>
-Not yet available.
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
 </div>
-<div id="box4">
-<h1>Universal Spells</h1>
-<b>Mana Weave</b><br>
-"To weave ones mana is the very essence of being a mage; almost every spell that you will learn from this tome, as well as spells you develop of your own volition will incorporate this technique in some way, shape, or form. Weaving mana is an extremely simple task to those who are born with an active mana pool; simply focus on a singular part of the body--typically the hands--and envision a manifestation of your inner energies bubbling to it's surface. 
-<br>
-There are numerous books in the Grand Archives that take this process into more depth, and this overview is meant to act as a reference rather than a teacher, so if this is your first time attempting the magical arts, the best course of action for you would be to consult another mage for help, or at the very least another book for beginners within the library. ​This is a general spell, and has no single specific teacher." 
-<br><br>
-<b>Mana Spark</b><br>
-"The next practical step for a mage who has learned to weave their mana is to learn to produce a mana spark. A mana spark is a relatively harmless projection of a mage's energies, creating a physical form and direction to one's mana without actually imbuing heavily violent intent upon it. It is the easiest way to learn the basics of creating projectiles via one's magic, and the physical techniques hind the theory are often reproduced to create a range of different attacks. 
-<br>
-To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best. This is a general spell, and has no single specific teacher.
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
 </div>
-<div id="circle1">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/3xLecKX.png"/>
+<div id="bigholder"></div>
+
+<div id="detailpic1"></div>
+<div id="detailpic2"></div>
+<div id="detailtitle1">
+D.O.B.
 </div>
-<div id="image1">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/aG5MIKS.png"/>
+<div id="detail1">
+Jan. 5th
 </div>
-<div id="circle2">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/HFQEhZb.png"/>
+<div id="detailtitle2">
+S.O.
+</div>
+<div id="detail2">
+Demi
+</div>
+<div id="detailtitle3">
+Height
+</div>
+<div id="detail3">
+5'6"
+</div>
+<div id="detailtitle4">
+Species
+</div>
+<div id="detail4">
+Human
+</div>
+<div id="detailtitle5">
+Race
+</div>
+<div id="detail5">
+Irish
+</div>
+<div id="detailtitle6">
+Weight
+</div>
+<div id="detail6">
+120 lbs.
+</div>
+<div id="personality">
+<h1>Personality</h1>
+Her passive state is one of detached reservation. The young Faith Mage does her very best to appear as formal and polite as possible in typical situations and scenarios. In reality she is an incredibly passionate woman who struggles with self control. Her emotions often get the best of her for even the smallest reasons. That isn’t to say she blows things out of proportion, but if an event is intended to trigger some kind of emotional response it is very likely she will be unable to stop herself. Serenity is stubborn, loyal, and possesses a big heart, but feels the need to repress these traits thanks to the culture of her family.
+</div>
+<div id="appearancetrigger">
+A p p e a r a n c e
+</div>
+<div id="appearance">
+A noble damsel through and through. Serenity McKenna is a very dainty woman, and her petiteness only seems to add to the illusion of frailty. While not overly pronounced her bosom and rear are voluptuous in comparison to her thin frame. Her complexion is rather pale, but has the benefit of coloration thanks to the natural soft blue hues of her long silky hair and matching big round eyes. One cute little nose and full rosy pink lips add to the plentiful feminine charm found in her heart shaped face. Serenity’s style is arguably distinct. Despite hailing from the New World she was born into a Mage family, opening the door for having “exotic” tastes in clothing that might be considered too strange among other humans in the modern mundane world. She takes a strong liking to attire reminiscent of the “Victorian” style and era, but with a modern spin. Serenity loves corsets, petticoats, fluffy flowing skirts, and blouses with slightly inflated sleeves. She generally prefers dresses and skirts to pants, but can be found wearing them on occasion if she believes them necessary.
 </div>
 </div>
 
 <div id="tab3">
-<div id="box1">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
+</div>
+<div id="bannertitle">
+Serenity McKenna
+</div>
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
+</div>
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
+</div>
+<div id="bigholder"></div>
+
+<div id="familyhistory">
+<h1>Family History</h1>
+A clan of very proud humans founded during the ancient times, when Ireland consisted mostly of vikings, barbarians, and aboriginals. Magic had become a concept finally available for the average individual’s use, proper training required only for true mastery. Humans obtained godlike powers far too easily, which led to misuse and inevitably a war between the mundane and the mystical. With pride and honor, the very first McKenna Patriarch sided his family with the humans and fought to destroy any hold or claim magic beasts and beings had over their land. Their success was noteworthy, impressive, but unfortunately short lived.
+<br><br>
+Another family stood in their way, contested their mission; a clan of semi-human warriors known as the O’Connors. They had loyalty ties among humans and magic beasts alike, so when the time came for them to face the McKennas they offered a peaceful option of surrender. The original Patriarch wouldn’t have it, he refused to allow such a cowardly blow to his pride. Kneel before another war clan in surrender before the fighting had even begun? Never! A battle finally commenced between them, long and arduous, but after the slaughtering of many of his descendants defeat had to be accepted. His rivals emerged victorious.
+<br><br>
+It was customary to wipe out any who shared the blood of those that opposed a warrior family, but the victorious Patriarch was sympathetic toward his human brethren, and was even further motivated to spare what remained of them because of special skills they possessed. As it turned out, McKenna females made for exceptional healers, a vital piece of a strategic puzzle that O’Connors lacked severely. He promised to let them live on, even reward their loyalty when the war was over, if they agreed to serve his family. Begrudgingly, the between Irishmen accepted the offer. To this day, thousands upon thousands of years later, they still bow their heads and carry the weight bestowed by their conquerors.
+</div>
+<div id="historypic1"></div>
+<div id="historypic2"></div>
+<div id="historypic3"></div>
+<div id="serenityhistory">
+<h1>Serenity's Story</h1>
+The current McKenna Patriarch could trace his exact bloodline straight back to the original, a direct descendant of the man who led them into battle and lost. It was his duty to continue this important part of the family tree, leading to an arranged marriage that produced him multiple sons. The eldest followed in his father’s footsteps, married off to a woman from another clan for political gain, and producing two more heirs: Niall and Serenity McKenna. Niall came first, two years before his younger sister, and is considered the “true” Patriarch heir. While the exact same blood runs through Serenity’s veins she isn’t considered any more important than every other female born into their clan. Her only value lies in her capacity to be bred for the sake of producing more exquisite heirs, and her talent in the healing arts. 
+<br><br>
+Ever since her gender became apparent, before the girl was even birthed, an entire framework had been laid for the rest of her life. Classes were arranged, schedules manifested, and high expectations soon followed suit. Serenity was supposed to be a role model for her fellow McKenna women, a prime example of their idea of “perfection,” but as a human she naturally fell short. The issue with marrying young men to women from other varying cultures was a strong one in this case. The young child’s mother--whom she inherited her blue hair from--was extremely independent and did not behave as they preferred. Unfortunately her daughter also inherited some of this spunk, leading to many drama based issues and nights of punishment.
+<br><br>
+Make no mistake, the impressionable child tried her very best, pursued knowledge and excelled in her schooling, but her behavior always fell short. She lacked the capacity to remain indifferent, far too passionate and unable to control the extent of her powerful emotions. It eventually reached a point where even her patient grandfather gave up on her, disowning her as an “heir” entirely. Instead of fulfilling her purpose of being married off for politics and being a shining example to her peers, Serenity was instead handed right over to the O’Connors as a potential Faith Mage for them to utilize. She was assigned to be a young battlemage’s squire. Griffin was the name of the young lady’s new master, and his current location happened to be at an establishment of learning for mages. The perfect environment for a blossoming practitioner of Faith to simultaneously achieve her newly assigned purpose and grow in magical strength.
+</div>
+</div>
+
+<div id="tab4">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
+</div>
+<div id="bannertitle">
+Serenity McKenna
+</div>
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
+</div>
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
+</div>
+<div id="bigholder"></div>
+
+<div id="customs">
+<h1>Family Customs</h1>
+Ceremonies are central to McKenna customs. They possess a few that are deemed extremely important, and all who carry their bloodline are expected to take part in every single one they possibly can. Showmanship is a big deal, and even if they are a clan of barbaric warriors they often set their violent tendencies aside and don the garb of wealthy upper class nobles for big family gatherings.
+<br><br>
+<b>Gender Reveal</b><br>
+When an infant reaches the point of development in its mother’s womb where its gender can be determined, its parents are expected to reveal this information to the rest of their immediate family and the Patriarch. This allows them to keep track of how many individuals of each gender there are, as well as opens the door for the expecting parents to start planning their child’s future accordingly.
+<br><br>
+<b>Celebration of New Life</b><br>
+While most humans across the world have a “Christening” for their newly born children, McKennas do not believe in the same deity, and therefore their similar custom still differs. The newborn’s immediate family gathers together, dabbing “holy” oil on the babe’s forehead, and congratulate them for joining the ranks of their proud clan. A successful birth is a blessing meant to be treasured and forever cemented into history.
+<br><br>
+<b>Coming of Age</b><br>
+Very little is left up to a McKenna child’s own decisions, the higher they rank in the family social ladder the less control they have over their own lives. Whatever meager slim pickings of choices they’re allowed to make are typically done during this particular ceremony. Akin to a graduation, it’s the recognition of a child’s growth from adolescence into adulthood, typically taking place during their Sixteenth year. During this celebration of sorts the new “adult(s)” must decide on a career path for themselves, beginning their journey into a specific trade, ensuring success in mundane society and cementing their future source of income.
+<br><br>
+<b>Marriage</b><br>
+More often than not marriages are arranged, but regardless of whether the suitors pick their life partner for themselves or have one decided for them marriage is a very big deal. Not only are the exchanged vows seen as sacred promises never to be broken, it is also often the welcoming of an outsider into the family line. Spouses who were not born with McKenna blood are expected to willingly accept a “blood donation” from their partner, cementing their place among their new peers as holders of more than just a shared name.
+<br><br>
+<b>Funerals</b><br>
+Death is a part of life, one cannot exist without the other, but that doesn’t mean loss of a loved one is easy to bear. McKennas possess a strong sense of community and often mourn with one another even if the loss wasn’t close to their hearts. Funerals are perhaps the biggest ceremonies they hold, attracting members of the family far and wide, even if they’d never met the individual who died.
+</div>
+<div id="culturepic1"></div>
+<div id="culturepic2"></div>
+<div id="culturepic3"></div>
+<div id="culture">
+<h1>McKenna Culture</h1>
+On the surface they appear to be a very organized and thoughtful folk. Their prestigious mentality is common knowledge throughout the multiverse (for those who actually know of them). Tendencies to have entire lifeplans for unborn children are tropes often passed in conversation or rumor. While this appears to be a sign of regality it actually has more to do with their most prominent fatal flaw: pride. McKennas aren’t necessarily extremely self centered, but they do think pretty highly of themselves. They believe their own foundational culture to be the proper mindset for any community and often look down on other methods or customs, bad mouthing them behind closed doors in place of showing offense to their faces. 
+<br><br>
+High expectations leave little room for mistakes. While they aren’t overly judgemental of other human beings they are extremely critical to their own kind, constantly worried about public image and the like. Errors are not easily forgotten, one simple slip up could be stapled to a McKenna’s back for the rest of their life. This creates a tension based contrast to their natural tendency to prefer each other’s company over those of outsiders. They are a close knit clan that secretly harbors spite for others who share their blood.
+<br><br>
+This issue actually goes even deeper, namely in conservative views regarding the roles of individuals among their ranks based entirely on their genitalia. Females and Males hold different roles in society and aren’t allowed to break away from these customs. Men are expected to “bring home the bacon,” provide for their families and establish a successful career in whatever society they’ve integrated themselves into. Masculinity is a big deal in this patriarchal society, if one possesses a male’s sexual organ they are to be battle-trained warriors with powerful offensive or defensive magic. On the opposite end, women are homemakers first and servants second. Any with a female’s reproductive system exist only to breed and care for children. Their magic must be centered around supporting the men and children through utility, or being a true caretaker with the talents of a healer.
+<br>
+No middle ground exists, causing major conflict for those whose personality or sexuality does not fall within these confines. Serenity and Niall know firsthand how little patience their clan has for those who do not fit within their strict social constructs. Ironic considering how progressive they claim to be as an established Mage family.
+</div>
+</div>
+
+<div id="tab5">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
+</div>
+<div id="bannertitle">
+Serenity McKenna
+</div>
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
+</div>
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
+</div>
+<div id="bigholder"></div>
+
+<div id="medium">
+<h1>Medium</h1>
+Not yet available.
+</div>
+<div id="inventorytitle">
+Inventory & Possessions
+</div>
+<div id="item1">
+<span class="tabs" onClick="changeNavigation1 ('tab9')"></span>
+</div>
+<div id="item2">
+<span class="tabs" onClick="changeNavigation1 ('tab10')"></span>
+</div>
+<div id="item3">
+<span class="tabs" onClick="changeNavigation1 ('tab11')"></span>
+</div>
+<div id="item4">
+<span class="tabs" onClick="changeNavigation1 ('tab12')"></span>
+</div>
+<div id="item5">
+<span class="tabs" onClick="changeNavigation1 ('tab13')"></span>
+</div>
+<div id="inventory">
+<h1>Suitcase (x3)</h1>
+Appear more like hardcover oversized briefcases but contain all of her belongings: clothes, brushes, makeup, accessories, books, and various feminine essentials. Each suitcase has three buckle latches, two handles, and four tiny wheels on its bottom for rolling over smooth flat surfaces. 
+<br><br>
+<b>Hint:</b> <i>Item images above are clickable.</i>
+</div>
+
+<div id="tab9">
+<h1>Suitcase (x3)</h1>
+Appear more like hardcover oversized briefcases but contain all of her belongings: clothes, brushes, makeup, accessories, books, and various feminine essentials. Each suitcase has three buckle latches, two handles, and four tiny wheels on its bottom for rolling over smooth flat surfaces. 
+<br><br>
+<b>Hint:</b> <i>Item images above are clickable.</i>
+</div>
+<div id="tab10">
+<h1>Apothecary Satchel</h1>
+A small minor purse-sized pack with loops on its back so it can be attached to varying kinds of straps or belts for the sake of practicality. Inside are mini fabric compartments, and Serenity has sorted various natural herbs and minor nonmagic medicines (Ibuprofen, Penicillin, Ginger Supplements, etc) into its available spaces. 
+</div>
+<div id="tab11">
+<h1>Journal</h1>
+Typical leatherbound journal for handwriting notes in. It’s not very sizeable and is already half full of first aid study notes from required medic lessons taught at home.
+</div>
+<div id="tab12">
+<h1>Pen (x3)</h1>
+Plain ballpoint ink pens, two with black ink and one with dark blue. 
+</div>
+<div id="tab13">
+<h1>Family Crest</h1>
+Coin-sized weighted pendant that dangles on a basic chain around her neck. It depicts the McKenna family crest in fancy metals and designs (Iron grade in its entirety).
+</div>
+</div>
+
+<div id="tab6">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
+</div>
+<div id="bannertitle">
+Serenity McKenna
+</div>
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
+</div>
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
+</div>
+<div id="bigholder"></div>
+
+<div id="magic1">
+<h1>Mana Manipulation</h1>
+<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+</div>
+<div id="magic2">
+<h1>Universal Spells</h1>
+<b>Mana Weave</b><br>
+"To weave ones mana is the very essence of being a mage; almost every spell that you will learn from this tome, as well as spells you develop of your own volition will incorporate this technique in some way, shape, or form. Weaving mana is an extremely simple task to those who are born with an active mana pool; simply focus on a singular part of the body--typically the hands--and envision a manifestation of your inner energies bubbling to it's surface. 
+<br><br>
+There are numerous books in the Grand Archives that take this process into more depth, and this overview is meant to act as a reference rather than a teacher, so if this is your first time attempting the magical arts, the best course of action for you would be to consult another mage for help, or at the very least another book for beginners within the library. ​This is a general spell, and has no single specific teacher." 
+<br><br>
+<b>Mana Spark</b><br>
+"The next practical step for a mage who has learned to weave their mana is to learn to produce a mana spark. A mana spark is a relatively harmless projection of a mage's energies, creating a physical form and direction to one's mana without actually imbuing heavily violent intent upon it. It is the easiest way to learn the basics of creating projectiles via one's magic, and the physical techniques hind the theory are often reproduced to create a range of different attacks. 
+<br><br>
+To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best. This is a general spell, and has no single specific teacher."
+</div>
+<div id="universals">
+</div>
+<div id="unitabbox">
+<span class="tabs" onClick="changeNavigation2 ('tab14');changeNavigation3 ('tab15')">Universals</span>
+</div>
+<div id="faith">
+</div>
+<div id="faithtabbox">
+<span class="tabs" onClick="changeNavigation2 ('tab16');changeNavigation3 ('tab17')">Faith</span>
+</div>
+<div id="truepract">
+</div>
+
+<div id="tab14">
+<h1>Mana Manipulation</h1>
+<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+</div>
+<div id="tab15">
+<h1>Universal Spells</h1>
+<b>Mana Weave</b><br>
+"To weave ones mana is the very essence of being a mage; almost every spell that you will learn from this tome, as well as spells you develop of your own volition will incorporate this technique in some way, shape, or form. Weaving mana is an extremely simple task to those who are born with an active mana pool; simply focus on a singular part of the body--typically the hands--and envision a manifestation of your inner energies bubbling to it's surface. 
+<br><br>
+There are numerous books in the Grand Archives that take this process into more depth, and this overview is meant to act as a reference rather than a teacher, so if this is your first time attempting the magical arts, the best course of action for you would be to consult another mage for help, or at the very least another book for beginners within the library. ​This is a general spell, and has no single specific teacher." 
+<br><br>
+<b>Mana Spark</b><br>
+"The next practical step for a mage who has learned to weave their mana is to learn to produce a mana spark. A mana spark is a relatively harmless projection of a mage's energies, creating a physical form and direction to one's mana without actually imbuing heavily violent intent upon it. It is the easiest way to learn the basics of creating projectiles via one's magic, and the physical techniques hind the theory are often reproduced to create a range of different attacks. 
+<br><br>
+To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best. This is a general spell, and has no single specific teacher."
+</div>
+<div id="tab16">
 <h1>Faith (Paige)</h1>
 <i>"Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile, and no faith spell can ever cause harm to another being (unless faith magic specifically harms them)."</i>
 </div>
-<div id="line1"></div>
-<div id="box2">
-<h1>???</h1>
-To be determined.
-</div>
-<div id="line2"></div>
-<div id="box3">
+<div id="tab17">
 <h1>Paige Spells</h1>
 <b>Basic Aide</b><br>
 Through physical contact with an individual, the caster may weave her Faith Mana into them to mend minor cuts and bruises that she can see or seek out.
 <br><br>
 <b>Antiseptic</b><br>
-By maintaining physical with her patient, the caster may weave Faith Mana into them and clean basic mundane foreign contaminates (dirt, germs, pus, etc) that she can detect from injuries.
+By maintaining physical with her patient, the caster may weave Faith Mana into them and clean basic mundane foreign contaminates (dirt, germs, pus, etc) that she can detect from injuries. 
 <br><br>
-<b>Guard</b><br>
+<b>Basic Guard</b><br>
 The caster creates a thin translucent pane of solidified Faith Mana in any basic flat shape she desires. While its size can vary it can never measure more than 5x5 feet (height x width). Guard remains stationary once formed but will deactivate automatically should it ever get further than ten feet away from the caster. Its durability is Tin (scaling to Iron at Mage). Being a purely defensive barrier allows it to retain the Faith Passive: Guard can take one extra hit of equal rank before breaking.
-</div>
-<div id="box4">
-<h1>???</h1>
-To be determined.
-</div>
-<div id="circle1">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/0SaQjSo.png"/>
-</div>
-<div id="image1">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/8HaRe93.png"/>
-</div>
-<div id="circle2">
-<img style="width:100%;height:100%;border-radius:100%;" src="https://i.imgur.com/aMdObhM.png"/>
 </div>
 </div>
 
-<div id="tab4">
-<div id="fancyfancy">
-Serenity's Family
+<div id="tab7">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
 </div>
-<div id="familytab1">
-<div id="fpic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/UAENg9W.png"/>
+<div id="bannertitle">
+Serenity McKenna
 </div>
-<div id="fline1"></div>
-<div id="fline2"></div>
-<div id="fname">
-<b>Cormac McKenna</b>
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
 </div>
-<div id="ftitle">
-<i>Grandfather</i>
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
 </div>
+<div id="bigholder"></div>
+
+<div id="grandfather"></div>
+<div id="grandfathertab">
+<span class="tabs" onClick="changeNavigation4 ('tab18');changeNavigation5 ('tab19');changeNavigation6 ('tab20');">Cormac</span>
 </div>
-<div id="ftabbox1">
-<span class="tabs" onClick="changeNavigation1 ('tab5');changeNavigation2 ('tab6');changeNavigation3 ('tab7')"></span>
+<div id="father"></div>
+<div id="fathertab">
+<span class="tabs" onClick="changeNavigation4 ('tab21');changeNavigation5 ('tab22');changeNavigation6 ('tab23');">Riordan</span>
 </div>
-<div id="familytab5">
-<div id="fpic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/7F6bx7P.png"/>
+<div id="mother"></div>
+<div id="mothertab">
+<span class="tabs" onClick="changeNavigation4 ('tab24');changeNavigation5 ('tab25');changeNavigation6 ('tab26');">Eleanore</span>
 </div>
-<div id="fline1"></div>
-<div id="fline2"></div>
-<div id="fname">
-<b>Riordan McKenna</b>
+<div id="brother"></div>
+<div id="brothertab">
+<span class="tabs" onClick="changeNavigation4 ('tab27');changeNavigation5 ('tab28');changeNavigation6 ('tab29');">Niall</span>
 </div>
-<div id="ftitle">
-<i>Father</i>
+<div id="cousin"></div>
+<div id="cousintab">
+<span class="tabs" onClick="changeNavigation4 ('tab30');changeNavigation5 ('tab31');changeNavigation6 ('tab32');">Ian</span>
 </div>
+<div id="sire"></div>
+<div id="siretab">
+<span class="tabs" onClick="changeNavigation4 ('tab33');changeNavigation5 ('tab34');changeNavigation6 ('tab35');">Griffin</span>
 </div>
-<div id="ftabbox5">
-<span class="tabs" onClick="changeNavigation1 ('tab17');changeNavigation2 ('tab18');changeNavigation3 ('tab19')"></span>
-</div>
-<div id="familytab6">
-<div id="fpic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/P1Ep0nK.png"/>
-</div>
-<div id="fline1"></div>
-<div id="fline2"></div>
-<div id="fname">
-<b>Eleanore McKenna</b>
-</div>
-<div id="ftitle">
-<i>Mother</i>
-</div>
-</div>
-<div id="ftabbox6">
-<span class="tabs" onClick="changeNavigation1 ('tab20');changeNavigation2 ('tab21');changeNavigation3 ('tab22')"></span>
-</div>
-<div id="familytab2">
-<div id="fpic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/o030oo2.png"/>
-</div>
-<div id="fline1"></div>
-<div id="fline2"></div>
-<div id="fname">
-<b>Niall McKenna</b>
-</div>
-<div id="ftitle">
-<i>Brother</i>
-</div>
-</div>
-<div id="ftabbox2">
-<span class="tabs" onClick="changeNavigation1 ('tab8');changeNavigation2 ('tab9');changeNavigation3 ('tab10')"></span>
-</div>
-<div id="familytab3">
-<div id="fpic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/p4VwN2I.png"/>
-</div>
-<div id="fline1"></div>
-<div id="fline2"></div>
-<div id="fname">
-<b>Ian McKenna</b>
-</div>
-<div id="ftitle">
-<i>Cousin</i>
-</div>
-</div>
-<div id="ftabbox3">
-<span class="tabs" onClick="changeNavigation1 ('tab11');changeNavigation2 ('tab12');changeNavigation3 ('tab13')"></span>
-</div>
-<div id="familytab4">
-<div id="fpic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/olEOKHW.png"/>
-</div>
-<div id="fline1"></div>
-<div id="fline2"></div>
-<div id="fname">
-<b>Griffin O'Connor</b>
-</div>
-<div id="ftitle">
-<i>Sire</i>
-</div>
-</div>
-<div id="ftabbox4">
-<span class="tabs" onClick="changeNavigation1 ('tab14');changeNavigation2 ('tab15');changeNavigation3 ('tab16')"></span>
-</div>
+
 <div id="familypic">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/HXaW5xv.png"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/K7XwXSm.png"/>
 </div>
 <div id="familybasics">
-<div id="subjectname">
-<b>Name:</b>
-</div>
-<div id="name">
-Cormac
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-Mid 60's
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-May 13th
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Male
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Hetero
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-Patriarch
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-6'6"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-230 lbs.
-</div>
+<b>Name:</b> Cormac McKenna<br>
+<b>Gender:</b> Cisgender Male<br>
+<b>Age:</b> Mid Sixties<br>
+<b>Birthdate:</b> May 13th<br>
+<b>Sexuality:</b> Heterosexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> McKenna Patriarch
 </div>
 <div id="familyinfo">
 <h1>Grandfather</h1>
 The McKenna Patriarch is a respectable man with old fashioned values that may be grossly outdated, but do not necessarily negatively affect the world around him. He is a patient and thoughtful individual who cares deeply for his family and their wellbeing, while also being strict for the sake of preserving traditional values and challenging them to be all they can be. Serenity’s relationship with him is best described as “estranged.” She had the misfortune of being born into a Conservative family as a female and strongly dislikes the unfair expectations that come attached. Since the girl can’t easily be conformed into their ideal example of the perfect woman her Grandfather finds her presence just as intolerable as she finds his.
 </div>
 
-<div id="tab5">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/HXaW5xv.png"/>
+<div id="tab18">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/K7XwXSm.png"/>
 </div>
-<div id="tab6">
-<div id="subjectname">
-<b>Name:</b>
+<div id="tab19">
+<b>Name:</b> Cormac McKenna<br>
+<b>Gender:</b> Cisgender Male<br>
+<b>Age:</b> Mid Sixties<br>
+<b>Birthdate:</b> May 13th<br>
+<b>Sexuality:</b> Heterosexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> McKenna Patriarch
 </div>
-<div id="name">
-Cormac
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-Mid 60's
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-May 13th
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Male
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Hetero
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-Patriarch
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-6'6"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-260 lbs.
-</div>
-</div>
-<div id="tab7">
+<div id="tab20">
 <h1>Grandfather</h1>
 The McKenna Patriarch is a respectable man with old fashioned values that may be grossly outdated, but do not necessarily negatively affect the world around him. He is a patient and thoughtful individual who cares deeply for his family and their wellbeing, while also being strict for the sake of preserving traditional values and challenging them to be all they can be. Serenity’s relationship with him is best described as “estranged.” She had the misfortune of being born into a Conservative family as a female and strongly dislikes the unfair expectations that come attached. Since the girl can’t easily be conformed into their ideal example of the perfect woman her Grandfather finds her presence just as intolerable as she finds his.
 </div>
 
-<div id="tab8">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/K2N8IS6.png"/>
-</div>
-<div id="tab9">
-<div id="subjectname">
-<b>Name:</b>
-</div>
-<div id="name">
-Niall
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-25
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-Mar 20th
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Male
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Homo
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-Warrior
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-6'3"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-230 lbs.
-</div>
-</div>
-<div id="tab10">
-<h1>Elder Brother</h1>
-Niall is a compassionate and kind hearted individual. He shares his younger sister’s capacity for passion but has a much better handle on his feelings and excels at self control in general. A trained and hardened warrior who cares deeply for his sibling and sympathizes with her identity struggle among the rather bias members of their extended family. Even the man himself suffers despite being a male in a patriarchal society. Expectations for men to perform well on the battlefield and be the breadwinners of their households aside, Niall is expected to be arranged to marry a woman for political reasons and produce more heirs as their original Patriarch’s direct descendants. As it turns out he is by no means a straight man with interest in the female body. Serenity and her brother are very close, often covering for one another when getting into trouble and confiding secrets and desires between each other as best friends do.
-</div>
-
-<div id="tab11">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/60hTJ2k.png"/>
-</div>
-<div id="tab12">
-<div id="subjectname">
-<b>Name:</b>
-</div>
-<div id="name">
-Ian
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-21
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-Oct 19th
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Male
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Hetero
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Vult
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-<a target="_blank" href="http://ulreich.weebly.com">Student</a>
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-6'5"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-265 lbs.
-</div>
-</div>
-<div id="tab13">
-<h1>Cousin</h1>
-Ian was a favorite playmate for both Niall and Serenity during their early childhood. After a tragic incident involving the death of the boy’s father he disappeared from their lives, leaving the young girl to worry endlessly thanks to the situation’s lack of closure. They are to be reunited during their time together at Ulreich University, which should make her happy but unfortunately opens up a mixed bag of old feelings. Family rumors warn her to be cautious, that her hulking cousin has been reduced to little more than a feral beast. Serenity is well aware of their capacity to exaggerate and pull rumors out of their butts, making her skeptical of the criticism, but still somewhat wary. Will they be able to pick up where they left off and continue being friends despite all the years that have passed?
-</div>
-
-<div id="tab14">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/A0HieQo.png"/>
-</div>
-<div id="tab15">
-<div id="subjectname">
-<b>Name:</b>
-</div>
-<div id="name">
-Griffin
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-???
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-???
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Male
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Hetero
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-<a target="_blank" href="http://ulreich.weebly.com">Student</a>
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-???
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-???
-</div>
-</div>
-<div id="tab16">
-<h1>O'Connor</h1>
-Her perception of the youthful O’Connor is flawed by being raised in a bias culture. McKennas view O’Connors as barbaric overlords who enslave their Faith Mages without any pity or remorse. While this is obviously not the case and a complete exaggeration it is still hard for her to come to terms with her required servitude. Serenity doesn’t seem to get along too well with Griffin at the moment. Neither of them are inherently hostile toward one another, but her frustrations with his go-getter attitude and the way he seems to seek out danger only make the situation worse. Regardless she makes the best of it, welcoming his injuries if only for the opportunity to practice her magic and further her own skills.
-</div>
-
-<div id="tab17">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/ycEkjNm.png"/>
-</div>
-<div id="tab18">
-<div id="subjectname">
-<b>Name:</b>
-</div>
-<div id="name">
-Riordan
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-Mid 30's
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-Dec 22nd
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Male
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Hetero
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-General
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-6'4"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-250 lbs.
-</div>
-</div>
-<div id="tab19">
+<div id="tab21">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/u8OzclC.png"/>
+</div>
+<div id="tab22">
+<b>Name:</b> Riordan McKenna<br>
+<b>Gender:</b> Cisgender Male<br>
+<b>Age:</b> Mid Thirties<br>
+<b>Birthdate:</b> December 22nd<br>
+<b>Sexuality:</b> Heterosexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> McKenna General
+</div>
+<div id="tab23">
 <h1>Father</h1>
 As the Patriarch’s eldest son there’s a lot weighing on Riordan’s shoulders. He must prove himself worthy of someday taking up his father’s mantle, not only to the others within the McKenna clan but anyone outside as well. Pressure has molded him into a reserved figure who appears to back and support every single one of his father’s decisions, in addition to their core family values. While some question the man’s loyalty no evidence exists to back their suspicions and malicious rumors. Unfortunately this has earned him plenty of malice from a wife with high expectations, and driven him to a state of estrangement with both of his own children. Riordan loves them both equally, damned to suffering internally when they are mistreated or taken advantage of. Serenity believes her father to be just as far gone as her Grandfather and wants little to do with him.
 </div>
 
-<div id="tab20">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/n5c6VRr.png"/>
+<div id="tab24">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/GbXOKvW.png"/>
 </div>
-<div id="tab21">
-<div id="subjectname">
-<b>Name:</b>
+<div id="tab25">
+<b>Name:</b> Eleanore McKenna<br>
+<b>Gender:</b> Cisgender Female<br>
+<b>Age:</b> Mid Thirties<br>
+<b>Birthdate:</b> June 1st<br>
+<b>Sexuality:</b> Heterosexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> McKenna Witch
 </div>
-<div id="name">
-Eleanore
-</div>
-<div id="subjectage">
-<b>Age:</b>
-</div>
-<div id="age">
-Mid 30's
-</div>
-<div id="subjectdate">
-<b>D.O.B.:</b>
-</div>
-<div id="date">
-June 1st
-</div>
-<div id="subjectgender">
-<b>Gender:</b>
-</div>
-<div id="gender">
-Female
-</div>
-<div id="subjectsexuality">
-<b>Sexuality:</b>
-</div>
-<div id="sexuality">
-Hetero
-</div>
-<div id="subjectspecies">
-<b>Species:</b>
-</div>
-<div id="species">
-Human
-</div>
-<div id="subjectrace">
-<b>Race:</b>
-</div>
-<div id="race">
-Irish
-</div>
-<div id="subjectoccupation">
-<b>Job:</b>
-</div>
-<div id="occupation">
-Witch
-</div>
-<div id="subjectheight">
-<b>Height:</b>
-</div>
-<div id="height">
-5'9"
-</div>
-<div id="subjectweight">
-<b>Weight:</b>
-</div>
-<div id="weight">
-160 lbs.
-</div>
-</div>
-<div id="tab22">
+<div id="tab26">
 <h1>Mother</h1>
 Feisty, stubborn, headstrong; these are all words that could be used to accurately describe the Patriarch’s daughter-in-law. She is a powerful Witch hailing from an entirely different plane of existence, married to Riordan thanks to mutual arrangements between their families. Eleanore disagrees with the way McKennas run things wholeheartedly but as a woman has absolutely no power to change it, even if she is the future Matriarch. A deep rooted hatred for the stuck up Irish clan bloomed into malicious ire when the attempt at manipulating her precious daughter failed and instead of dealing with the issue they shipped her off to die. She thinks of the McKennas as cowardly and weak, imprinting these ideals and values into her own children in the hopes that they can change the course of the family’s future. To young Serenity she is a goddess, a self assured woman who knows her place in the world and will do everything possible to make her dreams come true.
+</div>
+
+<div id="tab27">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/atiWSOO.png"/>
+</div>
+<div id="tab28">
+<b>Name:</b> Niall McKenna<br>
+<b>Gender:</b> Cisgender Male<br>
+<b>Age:</b> Twenty Five<br>
+<b>Birthdate:</b> March 20th<br>
+<b>Sexuality:</b> Homosexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> McKenna Lieutenant
+</div>
+<div id="tab29">
+<h1>Brother</h1>
+Niall is a compassionate and kind hearted individual. He shares his younger sister’s capacity for passion but has a much better handle on his feelings and excels at self control in general. A trained and hardened warrior who cares deeply for his sibling and sympathizes with her identity struggle among the rather bias members of their extended family. Even the man himself suffers despite being a male in a patriarchal society. Expectations for men to perform well on the battlefield and be the breadwinners of their households aside, Niall is expected to be arranged to marry a woman for political reasons and produce more heirs as their original Patriarch’s direct descendants. As it turns out he is by no means a straight man with interest in the female body. Serenity and her brother are very close, often covering for one another when getting into trouble and confiding secrets and desires between each other as best friends do.
+</div>
+
+<div id="tab30">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/guXalyD.png"/>
+</div>
+<div id="tab31">
+<b>Name:</b> Ian McKenna<br>
+<b>Gender:</b> Cisgender Male<br>
+<b>Age:</b> Twenty One<br>
+<b>Birthdate:</b> October 19th<br>
+<b>Sexuality:</b> Heterosexual<br>
+<b>Species:</b> Vult<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> <a target="_blank" href="http://ulreich.weebly.com">Ulreich</a> Student
+</div>
+<div id="tab32">
+<h1>Cousin</h1>
+Ian was a favorite playmate for both Niall and Serenity during their early childhood. After a tragic incident involving the death of the boy’s father he disappeared from their lives, leaving the young girl to worry endlessly thanks to the situation’s lack of closure. They are to be reunited during their time together at Ulreich University, which should make her happy but unfortunately opens up a mixed bag of old feelings. Family rumors warn her to be cautious, that her hulking cousin has been reduced to little more than a feral beast. Serenity is well aware of their capacity to exaggerate and pull rumors out of their butts, making her skeptical of the criticism, but still somewhat wary. Will they be able to pick up where they left off and continue being friends despite all the years that have passed?
+</div>
+
+<div id="tab33">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/8FFdS9C.png"/>
+</div>
+<div id="tab34">
+<b>Name:</b> Griffin O'Connor<br>
+<b>Gender:</b> Cisgender Male<br>
+<b>Age:</b> TBA<br>
+<b>Birthdate:</b> TBA<br>
+<b>Sexuality:</b> Heterosexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Irish<br>
+<b>Role:</b> <a target="_blank" href="http://ulreich.weebly.com">Ulreich</a> Student
+</div>
+<div id="tab35">
+<h1>Sire</h1>
+Her perception of the youthful O’Connor is flawed by being raised in a bias culture. McKennas view O’Connors as barbaric overlords who enslave their Faith Mages without any pity or remorse. While this is obviously not the case and a complete exaggeration it is still hard for her to come to terms with her required servitude. Serenity doesn’t seem to get along too well with Griffin at the moment. Neither of them are inherently hostile toward one another, but her frustrations with his go-getter attitude and the way he seems to seek out danger only make the situation worse. Regardless she makes the best of it, welcoming his injuries if only for the opportunity to practice her magic and further her own skills.
+</div>
+</div>
+
+<div id="tab8">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XGhQSdv.png"/>
+</div>
+<div id="bannertitle">
+Serenity McKenna
+</div>
+<div id="bannertext">
+❝ If wishes came true I would be a bird, ascending beyond the expectations of man upon freedom's wings. ❞
+</div>
+<div id="bannerbutton">
+<span class="tabs" onClick="changeNavigation ('tab1')">← Previous Page</span>
+</div>
+<div id="bigholder"></div>
+
+<div id="credittitle">
+Credits <FONT COLOR="#FFFFFF">&</FONT> Sources <FONT COLOR="#FFFFFF">&</FONT> Links <FONT COLOR="#000000">(<FONT COLOR="#666666">Oh My!</FONT>)</FONT>
+</div>
+<div id="imagecredits">
+<h1>Images</h1>
+<li><a target="_blank" href="https://danbooru.donmai.us/posts/3545658">"Intro" Splash Page Image 1</a></li>
+<li><a target="_blank" href="https://danbooru.donmai.us/posts/3508426">"Intro" Splash Page Image 2</a></li>
+<li><a target="_blank" href="https://www.nintenderos.com/2017/04/nuevos-detalles-de-fire-emblem-echoes-shadows-of-valentia-centrados-en-varios-personajes-del-juego/">Banner Image 1 (Also used in "Details")</a></li>
+<li><a target="_blank" href="https://jimcrocodilecook.tumblr.com/post/180558832045/by-%E3%81%82%E3%82%93%E3%81%9A-permission-to-upload-was-granted-by-the">Banner Image 2</a></li>
+<li><a target="_blank" href="https://www.artstation.com/artwork/zAW4OL">Banner Image 3</a></li>
+<li><a target="_blank" href="https://www.twipu.com/creativeuncut/tweet/1105471806431944705">"Details" Image 2</a></li>
+<li><a target="_blank" href="https://danbooru.donmai.us/posts/3077374">"History" Image 1</a></li>
+<li><a target="_blank" href="https://www.pinterest.com/pin/684687949577158826/?lp=true">"History" Image 2</a></li>
+<li><a target="_blank" href="https://danbooru.donmai.us/posts/3566148">"History" Image 3</a></li>
+<li><a target="_blank" href="https://feheroes.gamepedia.com/Gustav:_Exsanguinator#Portrait">"Culture" Image 1 (Also used in "Family")</a></li>
+<li><a target="_blank" href="https://fireemblem.fandom.com/wiki/Reinhardt/Gallery">"Culture" Image 2 (Also used in "Family")</a></li>
+<li><a target="_blank" href="https://www.fantasynamegenerators.com/coat-of-arms-generator.php">"Culture" Crest Image</a></li>
+<li><a target="_blank" href="https://www.istockphoto.com/at/fotos/koffer?assettype=image&sort=mostpopular&mediatype=photography&phrase=koffer">"Items" Image 1</a></li>
+<li><a target="_blank" href="https://www.pexels.com/photo/accessory-bag-briefcase-buckle-1152077/">"Items" Image 2</a></li>
+<li><a target="_blank" href="https://www.pinterest.ca/pin/157203843221210697/">"Items" Image 3</a></li>
+<li><a target="_blank" href="https://www.istockphoto.com/fr/photos/stylo?license=rf&assettype=image&sort=mostpopular&mediatype=photography&phrase=stylo">"Items" Image 4</a></li>
+<li><a target="_blank" href="https://claymoreimports.com/celtic-brooches-with-clan-crest-and-stone/">"Items" Image 5</a></li>
+<li><a target="_blank" href="https://www.slodkiflirt.pl/s1/forum/t41023,1-the-dark-masion-fantasy-tajemnica-8-mieszane.htm">"Magic" Gif 1</a></li>
+<li><a target="_blank" href="https://aminoapps.com/c/anime/page/blog/best-medical-nin/Gwtn_uJaKbZxeXXz7qknBG2125Vv4W">"Magic" Gif 2</a></li>
+<li><a target="_blank" href="https://giphy.com/gifs/mario-miguel-e-xUOxfjsW9fWPqEWouI">"Magic" Gif 3</a></li>
+<li><a target="_blank" href="https://fireemblem.gamepress.gg/hero/legendary-eirika">"Family" Image 1 (and 2)</a></li>
+<li><a target="_blank" href="https://guide.fire-emblem-heroes.com/hrid_icy_blade/">"Family" Image 3</a></li>
+<li><a target="_blank" href="https://aminoapps.com/c/russkii-anime/page/user/basara/alM3_8dsQfnRmzej8xxR2E5xWd4bq0Vorn">"Family" Image 4</a></li>
+<li><a target="_blank" href="https://www.pinterest.com/pin/859202435134271909/?lp=true">"Family" Image 5</a></li>
+<br><br>
+<h1>Special Effects</h1>
+<li><a target="_blank" href="http://pajasevi.github.io/CSSnowflakes/">Falling "Flower" Effect</a></li>
+<li><a target="_blank" href="http://www.cursors-4u.com/cursor/2011/12/03/cute-polka-dotted-blue-bow-tie-ribbon.html">Cute Cursor</a></li>
+<li><a target="_blank" href="https://fonts.google.com/">Font Families</a></li>
+</div>
+<div id="misccredits">
+<h1>Music</h1>
+<li><a target="_blank" href="https://www.youtube.com/watch?v=9P4kjROkn8I">Forgotten City from RiME - Lindsey Stirling</a></li>
+<br><br>
+<h1>Peers</h1>
+Two of the characters depicted in the "Family" section/tab are not my own, nor are they NPCs intended to be controlled by me. They are the property of other Role-players who agreed to put contribute in a larger story with me. I will put the character's name below, clicking their name will bring you to the account that character is linked to.
+<br>
+<li><a target="_blank" href="http://griffin.chatango.com">Griffin O'Connor</a></li>
+<li><a target="_blank" href="http://ghost.chatango.com">Ian McKenna</a></li>
+<br><br>
+<h1>Intended Use</h1>
+These characters were created to fit the format of the eat-and-grow tabletop RPG style Group Role-play known as "Ulreich University." All are welcome to check it out, if you would like a chance to interact with this character, or even just want to find a nice group setting, please click <a target="_blank" href="http://ulreich.weebly.com">THIS LINK</a>!! Fair warning, it's a bit of a read for first-timers, but that's 90% of Role-play anyway.
+</div>
+<div id="creatorcredits">
+<FONT COLOR="#FFFFFF">©</FONT> This template was coded by <a target="_blank" href="http://being.chatango.com">Being</a> for personal use, please do not redistribute or steal. None of the images used are owned by the coder, all rights to their respective owners.
 </div>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Serenity.mp3" autostart="true" loop="true">
 
 </html>
+
